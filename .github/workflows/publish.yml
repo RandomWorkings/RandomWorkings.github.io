@@ -17,7 +17,7 @@ jobs:
       run: dotnet publish -c Release
 
     - name: Rewrite base href
-      uses: RandomWorkings.github.io/src/Client/wwwroot/@v1
+      uses: RandomWorkings/RandomWorkings.github.io/src/Client/wwwroot/@v1
       with:
         html_path: ${{ env.PUBLISH_DIR }}/index.html
         base_href: /
