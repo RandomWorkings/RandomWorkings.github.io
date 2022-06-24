@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomWorkings.Website.Clie
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomWorkings.Website.Shared", "src\Shared\RandomWorkings.Website.Shared.csproj", "{3C79C436-7C27-4568-82E4-D00D5247339D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{57476CBB-1E7D-4EF0-9DCB-757960E5B4D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BE0BCEFF-9774-42E2-8CAC-B8275AAE8470}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +34,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{375569FE-9ADA-4D22-BB89-2577EB21035C} = {BE0BCEFF-9774-42E2-8CAC-B8275AAE8470}
+		{08A498CF-027E-4CC4-AB10-D523C29F11C8} = {BE0BCEFF-9774-42E2-8CAC-B8275AAE8470}
+		{3C79C436-7C27-4568-82E4-D00D5247339D} = {BE0BCEFF-9774-42E2-8CAC-B8275AAE8470}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B7E2EB5B-3874-42F6-B6BB-26D97713F32B}
