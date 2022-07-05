@@ -4,6 +4,8 @@ This project is
 * ASP.Net 6.0
 * Blazor Web Application Project.
 
+View the working project here: https://randomworkings.github.io/
+
 ### Thanks to the following sources of help and information
 
 * https://github.com/SteveSandersonMS/BlazorOnGitHubPages
