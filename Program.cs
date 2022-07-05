@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
-using RWPagesSite.Data;
+using RandomWorkings.github.io.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
