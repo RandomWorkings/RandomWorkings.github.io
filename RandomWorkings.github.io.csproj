@@ -8,6 +8,8 @@
     <PackageIcon>Channel_Logo.jpg</PackageIcon>
     <RepositoryUrl>https://github.com/RandomWorkings/RandomWorkings.github.io</RepositoryUrl>
     <PackageReadmeFile>ReadMe.md</PackageReadmeFile>
+    <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
+    <EnableNETAnalyzers>False</EnableNETAnalyzers>
   </PropertyGroup>
 
   <ItemGroup>
