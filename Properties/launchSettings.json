@@ -8,7 +8,7 @@
     }
   },
   "profiles": {
-    "RWPagesSite": {
+    "RandomWorkings.github.io": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

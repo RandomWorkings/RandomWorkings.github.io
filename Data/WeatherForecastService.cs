@@ -1,4 +1,4 @@
-namespace RWPagesSite.Data
+namespace RandomWorkings.github.io.Data
 {
     public class WeatherForecastService
     {
