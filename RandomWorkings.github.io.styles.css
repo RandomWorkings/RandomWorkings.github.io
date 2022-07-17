@@ -137,9 +137,10 @@ main[b-hs2o8pgb8n] {
     .navbar-toggler[b-ekhggkv9fp] {
         display: none;
     }
-
-    .collapse[b-ekhggkv9fp] {
-        /* Never collapse the sidebar for wide screens */
+    /*
+    .collapse {
+         Never collapse the sidebar for wide screens 
         display: block;
     }
+    */
 }
