@@ -1,7 +1,8 @@
 name: DeployToGitHubPages
 env:
-  PUBLISH_DIR: bin/Release/net6.0/publish/wwwroot
-
+#  PUBLISH_DIR: bin/Release/net6.0/publish/wwwroot
+   PUBLISH_DIR: /wwwroot/
+   
 # Controls when the action will run
 on:
   push:
