@@ -1,6 +1,4 @@
 name: DeployToGitHubPages
-env:
-  PUBLISH_DIR: bin/Release/net6.0/publish/wwwroot
    
 # Controls when the action will run
 on:
@@ -14,19 +12,10 @@ jobs:
     - uses: actions/checkout@v3.0.2
 
     - name: Publish app
-      run: dotnet publish -c Release
+      run: dotnet publish RandomWorkings.github.io.csproj -c Release -o release --nologo
 
-    - name: Rewrite base href
-      uses: SteveSandersonMS/ghaction-rewrite-base-href@v1.1.0
+    - name: Commit wwwroot to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@v4.3.4
       with:
-        html_path: ${{ env.PUBLISH_DIR }}/index.html
-        base_href: /RandomWorkings.github.io/
-
-    - name: GitHub Pages
-      if: success()
-      uses: crazy-max/ghaction-github-pages@v3.0.0
-      with:
-        target_branch: gh-pages
-        build_dir: ${{ env.PUBLISH_DIR }}
-      env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        FOLDER: release/wwwroot
