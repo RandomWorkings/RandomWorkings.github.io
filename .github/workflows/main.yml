@@ -20,7 +20,7 @@ jobs:
       uses: SteveSandersonMS/ghaction-rewrite-base-href@v1.1.0
       with:
         html_path: ${{ env.PUBLISH_DIR }}/index.html
-        base_href: /RandomWorkings.github.io/wwwroot
+        base_href: /RandomWorkings.github.io/wwwroot/
 
     - name: GitHub Pages
       if: success()
