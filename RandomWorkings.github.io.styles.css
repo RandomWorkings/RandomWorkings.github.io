@@ -135,12 +135,11 @@ main[b-hs2o8pgb8n] {
 
 @media (min-width: 641px) {
     .navbar-toggler[b-ekhggkv9fp] {
-        display: none;
-    }
-    /*
-    .collapse {
-         Never collapse the sidebar for wide screens 
         display: block;
     }
-    */
+
+    .collapse[b-ekhggkv9fp] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
 }
