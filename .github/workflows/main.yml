@@ -1,7 +1,7 @@
 name: DeployToGitHubPages
 env:
   PUBLISH_DIR: bin/Release/net6.0/publish/wwwroot
-
+   
 # Controls when the action will run
 on:
   push:
@@ -17,10 +17,10 @@ jobs:
       run: dotnet publish -c Release
 
     - name: Rewrite base href
-      uses: SteveSandersonMS/ghaction-rewrite-base-href@v1
+      uses: SteveSandersonMS/ghaction-rewrite-base-href@v1.1.0
       with:
         html_path: ${{ env.PUBLISH_DIR }}/index.html
-        base_href: /
+        base_href: /RandomWorkings.github.io/
 
     - name: GitHub Pages
       if: success()
