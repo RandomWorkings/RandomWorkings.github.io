@@ -15,7 +15,7 @@ jobs:
       run: dotnet publish RandomWorkings.github.io.csproj -c Release -o release --nologo
 
     - name: Commit wwwroot to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@4.3.4
+      uses: JamesIves/github-pages-deploy-action@v4.3.4
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         FOLDER: release/wwwroot
