@@ -52,7 +52,7 @@
 
 @media (min-width: 641px) {
     .navbar-toggler {
-        display: inline-block;
+        display: none;
     }
 
     .collapse {
