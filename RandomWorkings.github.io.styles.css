@@ -10,11 +10,14 @@ main[b-hs2o8pgb8n] {
 }
 
 .sidebar[b-hs2o8pgb8n] {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    background-image: url("Images/Channel_Colours V2.jpg");
+    background-color: #333333;
+    background-size: 100% 100%;
+    background-repeat: repeat-y;
 }
 
 .top-row[b-hs2o8pgb8n] {
-    background-color: #f7f7f7;
+    background-color: #333333;
     border-bottom: 1px solid #d6d5d5;
     justify-content: flex-start;
     height: 3.5rem;
@@ -64,7 +67,7 @@ main[b-hs2o8pgb8n] {
     }
 
     .top-row[b-hs2o8pgb8n] {
-        position: sticky;
+        /*position: sticky;*/
         top: 0;
         z-index: 1;
     }
@@ -87,7 +90,7 @@ main[b-hs2o8pgb8n] {
 
 .top-row[b-ekhggkv9fp] {
     height: 3.5rem;
-    background-color: rgba(0,0,0,0.4);
+    background-color: #333333;
 }
 
 .navbar-brand[b-ekhggkv9fp] {
@@ -115,7 +118,7 @@ main[b-hs2o8pgb8n] {
     }
 
     .nav-item[b-ekhggkv9fp]  a {
-        color: #d7d7d7;
+        color: darkgray;
         border-radius: 4px;
         height: 3rem;
         display: flex;
@@ -125,12 +128,12 @@ main[b-hs2o8pgb8n] {
 
 .nav-item[b-ekhggkv9fp]  a.active {
     background-color: rgba(255,255,255,0.25);
-    color: white;
+    color: black;
 }
 
 .nav-item[b-ekhggkv9fp]  a:hover {
     background-color: rgba(255,255,255,0.1);
-    color: white;
+    color: darkblue;
 }
 
 @media (min-width: 641px) {
