@@ -1,10 +1,13 @@
-name: Build And Deploy GitHub Page Release
+name: Build And Deploy Website GitHub Page Release
 
 on:
   push:
     branches: [ main ]
 
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build-and-deploy:
