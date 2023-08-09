@@ -1,13 +1,27 @@
-# Random Workings First Website!
+# Random Workings GitHub Pages Website
 
-This project is 
-* ASP.Net 6.0
-* Blazor Web Application Project.
+**Project Link(s):**
+- https://randomworkings.github.io/PROJECT
 
-View the working project here: https://randomworkings.github.io/
+**Main Developer(s):**
+- Liz Larkman (Random Workings), https://github.com/RandomWorkings
 
-### Thanks to the following sources of help and information
+**Project Specifications**
+- ASP.Net 6.0
+- Blazor Web Application Project
 
-* https://github.com/SteveSandersonMS/BlazorOnGitHubPages
-* https://github.com/SteveSandersonMS/ghaction-rewrite-base-href
-* https://github.com/crazy-max/ghaction-github-pages
+**Project Purpose(s):**
+- Learning and development of coding skills.
+- Building proficency in Blazor, C#, .Net, Visual Studio
+
+---
+### Thanks / Accreditations
+
+- Workflow Setup
+  - https://swimburger.net/blog/dotnet/how-to-deploy-aspnet-blazor-webassembly-to-github-pages
+  - https://github.com/actions/checkout/
+  - https://github.com/actions/setup-dotnet/
+  - https://github.com/JamesIves/github-pages-deploy-action/
+
+---
+[(Back to top)](README.md)
