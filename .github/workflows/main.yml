@@ -1,4 +1,4 @@
-name: Build And Deploy Website GitHub Page Release
+name: Build And Deploy GitHub Page Release
 
 on:
  push:
@@ -13,7 +13,7 @@ jobs:
   steps:
     # https://github.com/actions/checkout/
     - uses: actions/checkout@v3.5.3
-    
+  
     # https://github.com/actions/setup-dotnet/
     - name: Setup .NET SDK
       uses: actions/setup-dotnet@v3.2.0
@@ -22,16 +22,16 @@ jobs:
   
     - name: Publish Blazor .Net App
       run: dotnet publish src/RandomWorkings.github.io.csproj -c Release -o release --nologo
-        
+      
     - name: Change base-tag in index.html from / to Project Repository Name
       run: sed -i 's/<base href="\/" \/>/<base href="\/" \/>/g' release/wwwroot/index.html
-          
+
     - name: copy index.html to 404.html
       run: cp release/wwwroot/index.html release/wwwroot/404.html
-            
+
     - name: Add .nojekyll file
       run: touch release/wwwroot/.nojekyll
-              
+
     # https://github.com/JamesIves/github-pages-deploy-action/
     - name: Deploy GitHub Pages Branch
       uses: JamesIves/github-pages-deploy-action@v4.4.3
