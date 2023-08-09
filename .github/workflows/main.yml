@@ -1,48 +1,37 @@
 name: Build And Deploy Website GitHub Page Release
 
 on:
-  push:
-    branches: [ main ]
-
-  workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}-${{ github.event_name }}
-  cancel-in-progress: true
+ push:
+  branches: [ main ]
+ 
+ workflow_dispatch:
 
 jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
+ build-and-deploy:
+  runs-on: ubuntu-latest
 
-    steps:
+  steps:
     # https://github.com/actions/checkout/
     - uses: actions/checkout@v3.5.3
-      with:
-       lfs: true
-
+    
     # https://github.com/actions/setup-dotnet/
     - name: Setup .NET SDK
       uses: actions/setup-dotnet@v3.2.0
       with:
-        dotnet-version: 6.0.x
-
+       dotnet-version: 6.0.x
+  
     - name: Publish Blazor .Net App
       run: dotnet publish src/RandomWorkings.github.io.csproj -c Release -o release --nologo
-
+        
     - name: Change base-tag in index.html from / to Project Repository Name
       run: sed -i 's/<base href="\/" \/>/<base href="\/" \/>/g' release/wwwroot/index.html
-
+          
     - name: copy index.html to 404.html
       run: cp release/wwwroot/index.html release/wwwroot/404.html
-
+            
     - name: Add .nojekyll file
       run: touch release/wwwroot/.nojekyll
-
+              
     # https://github.com/JamesIves/github-pages-deploy-action/
     - name: Deploy GitHub Pages Branch
       uses: JamesIves/github-pages-deploy-action@v4.4.3
