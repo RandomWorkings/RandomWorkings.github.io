@@ -5,7 +5,7 @@
 
 <h1>Channel Videos</h1>
 
-@if (videos == null)
+@if (_videos == null)
 {
     <p><em>Loading...</em></p>
 }
@@ -20,7 +20,7 @@ else
             </tr>
         </thead>
         <tbody>
-            @foreach (var forecast in videos)
+            @foreach (var forecast in _videos)
             {
                 <tr>
                     <td>@forecast.Pathway</td>
@@ -30,22 +30,4 @@ else
             }
         </tbody>
     </table>
-}
-
-@code {
-    private PathwayVideos[]? videos;
-
-    protected override async Task OnInitializedAsync()
-    {
-        videos = await Http.GetFromJsonAsync<PathwayVideos[]>("sample-data/videoCount.json");
-    }
-
-    public class PathwayVideos
-    {
-        public string? Pathway { get; set; }
-
-        public int VideoCount { get; set; }
-
-        public Uri? Link { get; set; }
-    }
 }
