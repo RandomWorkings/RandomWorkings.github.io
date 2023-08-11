@@ -22,7 +22,7 @@ jobs:
         dotnet-version: 6.0.x
 
     - name: Publish Blazor .Net App
-      run: dotnet publish RandomWorkings.github.io.csproj -c Release -o release --nologo
+      run: dotnet publish src/RandomWorkings.github.io.csproj -c Release -o release --nologo
 
     - name: Change base-tag in index.html from / to Project Repository Name
       run: sed -i 's/<base href="\/" \/>/<base href="\/" \/>/g' release/wwwroot/index.html
