@@ -1,4 +1,4 @@
-﻿namespace RandomWorkings.github.io.Pages;
+﻿namespace RandomWorkings.github.io.Pages.Experimental;
 
 partial class Counter
 {

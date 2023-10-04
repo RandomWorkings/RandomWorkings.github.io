@@ -1,39 +1,78 @@
-.page {
+
+.page
+{
     position: relative;
     display: flex;
     flex-direction: column;
+    background-color: #B2B2B230;
 }
 
-main {
+main
+{
     flex: 1;
 }
 
-.sidebar {
-    background-image: url("images/Channel_Colours V2.jpg");
-    background-color: #333333;
+.sidebar
+{
+    /*    background-image: url("images/channel/Channel_Colours V2.jpg"); */
+    background-color: #323232;
     background-size: 100% 100%;
     background-repeat: repeat-y;
 }
 
-.top-row {
-    color:white;
-    background-color: #333333;
-    border-bottom: 1px solid #d6d5d5;
+.top-row
+{
+    color: #fff;
+    background-color: #323232;
+    /*border-bottom: 1px solid #d6d5d5;*/
     justify-content: flex-start;
     height: 3.5rem;
     display: flex;
     align-items: center;
 }
 
-    .top-row ::deep a, .top-row ::deep .btn-link {
-        white-space: nowrap;
-        margin-left: 1.5rem;
-        text-decoration: none;
+    .top-row ::deep div.col-auto:first-child
+    {
+        background-color: inherit;
     }
 
-    .top-row ::deep a:hover, .top-row ::deep .btn-link:hover {
-        text-decoration: underline;
+    .top-row ::deep div.col-auto
+    {
+        border-radius: 0.25rem;
+        background-color: #B2B2B2;
     }
+
+    .top-row ::deep a,
+    .top-row ::deep .btn-link {
+        white-space: nowrap;
+        text-decoration: none;
+        color: #3A42FE;
+    }
+
+    .top-row ::deep a:hover,
+    .top-row ::deep .btn-link:hover {
+        text-decoration: none;
+        color: #C6380D;
+    }
+
+    .top-row ::deep a:visited,
+    .top-row ::deep .btn-link:visited {
+        text-decoration: none;
+        color: #C6120C;
+    }
+
+        .top-row ::deep a span,
+        .top-row ::deep .btn-link span,
+        .top-row ::deep a:hover span,
+        .top-row ::deep .btn-link:hover span,
+        .top-row ::deep a:visited span,
+        .top-row ::deep .btn-link:visited span
+        {
+            margin-top: auto;
+            margin-bottom: auto;
+            text-decoration: underline;
+        }
+
 
     .top-row ::deep a:first-child {
         overflow: hidden;
@@ -51,12 +90,14 @@ main {
 
     .top-row ::deep a, .top-row ::deep .btn-link {
         margin-left: 0;
+        color: #3A42FE;
     }
 }
 
 @media (min-width: 641px) {
     .page {
         flex-direction: row;
+
     }
 
     .sidebar {

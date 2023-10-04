@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xml:space="preserve">
+<title data-testid="svgTitle" id="github-svgtitle">github</title>
+<path d="M9,19c-4.3,1.4-4.3-2.5-6-3 M15,21v-3.5c0-1,0.1-1.4-0.5-2c2.8-0.3,5.5-1.4,5.5-6c0-1.2-0.5-2.3-1.3-3.2
+	c0.4-1,0.4-2.2-0.1-3.2c0,0-1.1-0.3-3.5,1.3c-2-0.5-4.2-0.5-6.2,0C6.5,2.8,5.4,3.1,5.4,3.1c-0.5,1-0.5,2.2-0.1,3.2
+	C4.5,7.2,4,8.3,4,9.5c0,4.6,2.7,5.7,5.5,6c-0.6,0.6-0.6,1.2-0.5,2V21"/>
+</svg>

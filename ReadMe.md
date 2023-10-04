@@ -19,6 +19,7 @@
 
 - General
   - https://www.w3schools.com/css/default.asp
+  - https://developer.mozilla.org/en-US/docs/Web
   - https://docs.microsoft.com/aspnet/
   - https://docs.github.com/en/pages
 
