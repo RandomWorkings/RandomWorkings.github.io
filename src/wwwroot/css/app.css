@@ -1,8 +1,10 @@
 ﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
-html, body {
+html, body
+{
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
 h1, .navbar-brand {
     font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
 }
@@ -11,17 +13,14 @@ h1:focus {
     outline: none;
 }
 
-a, .btn-link {
-    color: #0071c1;
-}
-
 .btn-primary {
     color: #fff;
     background-color: #1b6ec2;
     border-color: #1861ac;
 }
 
-.content {
+.content
+{
     padding-top: 1.1rem;
 }
 
@@ -65,3 +64,16 @@ a, .btn-link {
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+
+/* Random Workings Classes */
+
+.rw-random
+{
+    --true-black: #fff;
+    --true-white: #000;
+    --background-grey: #B2B2B2;
+    --rw-eye-right-normal: #CBA9CA;
+    --rw-eye-left-normal: #C6120C;
+    --rw-eye-right-zombie: #683597;
+    --rw-eye-left-zombie: #C6380D;
+}

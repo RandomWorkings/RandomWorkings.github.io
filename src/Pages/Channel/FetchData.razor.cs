@@ -1,6 +1,6 @@
 ﻿using System.Net.Http.Json;
 
-namespace RandomWorkings.github.io.Pages;
+namespace RandomWorkings.github.io.Pages.Channel;
 
 partial class FetchData
 {
@@ -8,7 +8,7 @@ partial class FetchData
 
     protected override async Task OnInitializedAsync()
     {
-        _videos = await Http.GetFromJsonAsync<PathwayVideos[]>( "sample-data/videoCount.json" );
+        _videos = await Http.GetFromJsonAsync<PathwayVideos[]>("sample-data/videoCount.json");
     }
 
     public class PathwayVideos
