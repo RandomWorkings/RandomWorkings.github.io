@@ -14,7 +14,6 @@ main
 
 .sidebar
 {
-    /*    background-image: url("images/channel/Channel_Colours V2.jpg"); */
     background-color: #323232;
     background-size: 100% 100%;
     background-repeat: repeat-y;
@@ -24,62 +23,21 @@ main
 {
     color: #fff;
     background-color: #323232;
-    /*border-bottom: 1px solid #d6d5d5;*/
     justify-content: flex-start;
     height: 3.5rem;
     display: flex;
     align-items: center;
 }
 
-    .top-row ::deep div.col-auto:first-child
-    {
-        background-color: inherit;
-    }
-
-    .top-row ::deep div.col-auto
-    {
-        border-radius: 0.25rem;
+    .top-row ::deep .button
+    {        
+        border-radius: 4px;
         background-color: #B2B2B2;
     }
 
-    .top-row ::deep a,
-    .top-row ::deep .btn-link {
-        white-space: nowrap;
-        text-decoration: none;
-        color: #3A42FE;
-    }
+@media (max-width: 640.98px)
+{
 
-    .top-row ::deep a:hover,
-    .top-row ::deep .btn-link:hover {
-        text-decoration: none;
-        color: #C6380D;
-    }
-
-    .top-row ::deep a:visited,
-    .top-row ::deep .btn-link:visited {
-        text-decoration: none;
-        color: #C6120C;
-    }
-
-        .top-row ::deep a span,
-        .top-row ::deep .btn-link span,
-        .top-row ::deep a:hover span,
-        .top-row ::deep .btn-link:hover span,
-        .top-row ::deep a:visited span,
-        .top-row ::deep .btn-link:visited span
-        {
-            margin-top: auto;
-            margin-bottom: auto;
-            text-decoration: underline;
-        }
-
-
-    .top-row ::deep a:first-child {
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-@media (max-width: 640.98px) {
     .top-row:not(.auth) {
         display: none;
     }
@@ -88,10 +46,6 @@ main
         justify-content: space-between;
     }
 
-    .top-row ::deep a, .top-row ::deep .btn-link {
-        margin-left: 0;
-        color: #3A42FE;
-    }
 }
 
 @media (min-width: 641px) {
@@ -111,16 +65,5 @@ main
         /*position: sticky;*/
         top: 0;
         z-index: 1;
-    }
-
-    .top-row.auth ::deep a:first-child {
-        flex: 1;
-        text-align: right;
-        width: 0;
-    }
-
-    .top-row, article {
-        padding-left: 2rem !important;
-        padding-right: 1.5rem !important;
     }
 }

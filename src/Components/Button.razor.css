@@ -1,0 +1,25 @@
+﻿.button
+{
+    border-radius: 40px;
+    background-color: #B2B2B255;
+    outline: 2px solid #3A42FE;
+}
+
+    .button a
+    {
+        color: #3A42FE;
+        background-color: #B2B2B255;
+        text-decoration: none;
+        align-items: center;
+    }
+
+    .button:hover
+    {
+        outline: 2px solid #C6120C;
+    }
+
+        .button:hover a
+        {
+            text-decoration: none;
+            color: #C6120C;
+        }
