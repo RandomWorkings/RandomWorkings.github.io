@@ -3,23 +3,34 @@
     border-radius: 40px;
     background-color: #B2B2B255;
     outline: 2px solid #3A42FE;
+    margin: 0.5rem;
 }
 
-    .button a
-    {
-        color: #3A42FE;
-        background-color: #B2B2B255;
-        text-decoration: none;
-        align-items: center;
-    }
+.button-text
+{
+    padding-left: 0;
+}
 
-    .button:hover
-    {
-        outline: 2px solid #C6120C;
-    }
+.button a, .button .link
+{
+    color: #3A42FE;
+    background-color: #B2B2B255;
+    text-decoration: none;
+    align-items: center;
+}
 
-        .button:hover a
-        {
-            text-decoration: none;
-            color: #C6120C;
-        }
+.button:active
+{
+    background-color: #B2B2B255;
+}
+
+.button:hover
+{
+    outline: 2px solid #C6120C;
+}
+
+.button:hover a, .button:hover .link
+{
+    text-decoration: none;
+    color: #C6120C;
+}

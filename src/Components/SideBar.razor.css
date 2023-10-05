@@ -1,17 +1,20 @@
-.navbar-toggler {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.top-row {
-    height: 3.5rem;
+﻿#sidebar
+{
     background-color: #323232;
 }
 
-.navbar-brand {
+.top-row
+{
+    height: 3.5rem;
+}
+
+.navbar-brand
+{
     font-size: 1.1rem;
 }
 
-.oi {
+.oi
+{
     width: 2rem;
     font-size: 1.1rem;
     vertical-align: text-top;
@@ -25,11 +28,13 @@
     padding-bottom: 0.5rem;
 }
 
-    .nav-item:first-of-type {
+    .nav-item:first-of-type
+    {
         padding-top: 1rem;
     }
 
-    .nav-item:last-of-type {
+    .nav-item:last-of-type
+    {
         padding-bottom: 1rem;
     }
 
@@ -56,12 +61,15 @@
             color: #000;
         }
 
-@media (min-width: 641px) {
-    .navbar-toggler {
+@media (min-width: 641px)
+{
+    .navbar-toggler
+    {
         display: none;
     }
 
-    .collapse {
+    .collapse
+    {
         /* Never collapse the sidebar for wide screens */
         display: block;
     }
