@@ -52,9 +52,9 @@ html, body
 
 #app
 {
-    background-image: url("/images/channel/channel-colours-diag.jpg");
+    background-image: url("/images/channel/channel-colours-vert.svg");
     background-color: var(--rw-talks-grey);
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: repeat-y;
 }
 
