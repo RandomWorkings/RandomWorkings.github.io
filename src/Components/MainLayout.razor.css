@@ -1,10 +1,5 @@
 #header, #body, #footer
 {
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    font-style: normal;
-    color: #000;
 }
 
 #header
@@ -27,24 +22,13 @@
 #pages
 {
     grid-area: sidebar;
-    display: grid;
-    order: 1;
-    gap: inherit;
-    grid-template-areas: "pages";
-    grid-template-rows: 1fr;
-    border-radius:1rem;
-    box-shadow: 0 0 0 2px #000;
 }
 
 #content
 {
     grid-area: content;
-    background-color: #DFDFDF;
-    display: grid;
-    order: 1;
-    gap: inherit;
-    grid-template-areas: "content";
-    grid-template-rows: 1fr;
+    background-color: #DFDFDF;    
+    order: 1;    
     border-radius: 1rem;
     box-shadow: 0 0 0 2px #000;
 }
@@ -54,9 +38,6 @@
 {
     #content
     {
-        grid-template-areas: "content";
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr
     }
 
     #pages
@@ -70,6 +51,8 @@
         margin-left: -0.25rem;
         overflow-y: auto;
         background-color: #323232;
+        border-radius: 1rem;
+        box-shadow: 0 0 0 2px #000;
     }
 }
 
@@ -86,10 +69,7 @@
 {
     #content
     {
-        display: grid;
-        grid-template-areas: "content";
-        grid-template-rows:1fr;
-        gap: inherit
+
     }
 }
 

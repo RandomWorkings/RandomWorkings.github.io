@@ -1,8 +1,33 @@
 ﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
+/* Random Workings Variables */
+
+.rw-random
+{
+    --true-black: #fff;
+    --true-white: #000;
+    --background-grey: #B2B2B2;
+    --rw-talks-orange: #FED7BD;
+    --rw-talks-grey: #323232;
+    --rw-plays-blue: #D3EFEF;
+    --rw-plays-red: #FDADA4;
+    --rw-makes-green: #CBE1CA;
+    --rw-makes-yellow: #FEFEB4;
+    --rw-does-pink: #FEE0E8;
+    --rw-does-purple: #CBA9CA;
+    --rw-rabbit-eye-blue: #3A42FE;
+    --rw-rabbit-eye-red: #C6120C;
+    --rw-rabbit-eye-purple: #683597;
+    --rw-rabbit-eye-pink: #C6380D;
+}
+
 html, body
 {
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+    font-family: 'Comic Sans MS', 'Comic Neue', Arial, Verdana, Tahoma, Calibri, 'Times New Roman', sans-serif, 'Segoe UI', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-weight: 400;
+    font-size: 12pt;
+    font-style: normal;
+    color: #000;
 }
 
 #app
@@ -63,16 +88,3 @@ h1:focus {
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
-
-/* Random Workings Classes */
-
-.rw-random
-{
-    --true-black: #fff;
-    --true-white: #000;
-    --background-grey: #B2B2B2;
-    --rw-eye-right-normal: #CBA9CA;
-    --rw-eye-left-normal: #C6120C;
-    --rw-eye-right-zombie: #683597;
-    --rw-eye-left-zombie: #C6380D;
-}
