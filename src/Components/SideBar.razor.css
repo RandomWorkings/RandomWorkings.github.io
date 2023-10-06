@@ -58,7 +58,7 @@
 
         .nav-item ::deep a:hover
         {
-            outline: 2px solid var(--rw-rabbit-eye-red);
+            outline: 2px solid var(--rw-rabbit-red);
             color: #000;
         }
 
@@ -79,18 +79,18 @@
 .nav-item ::deep #rw-talks
 {
     color: #000;
-    background-color:  var(rw-talks-orange)55;
+    background-color:  var(--rw-talks-orange-higlight);
 }
 
     .nav-item ::deep #rw-talks.active
     {
-        background-color:  var(rw-talks-orange);
+        background-color:  var(--rw-talks-orange);
     }
 
 .nav-item ::deep #rw-plays
 {
     color: #000;
-    background-color: var(--rw-plays-blue)55;
+    background-color: var(--rw-plays-blue-higlight);
 }
 
     .nav-item ::deep #rw-plays.active
@@ -101,7 +101,7 @@
 .nav-item ::deep #rw-makes
 {
     color: #000;
-    background-color: var(--rw-makes-green)55;
+    background-color: var(--rw-makes-green-higlight);
 }
 
     .nav-item ::deep #rw-makes.active
@@ -112,7 +112,7 @@
 .nav-item ::deep #rw-does
 {
     color: #000;
-    background-color: var(--rw-does-pink)55;
+    background-color: var(--rw-does-pink-higlight);
 }
 
     .nav-item ::deep #rw-does.active

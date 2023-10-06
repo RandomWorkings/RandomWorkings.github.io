@@ -2,7 +2,7 @@
 {
     border-radius: 40px;
     background-color: var(--bg-grey-mid);
-    outline: 2px solid var(--rw-rabbit-eye-blue);
+    outline: 2px solid var(--rw-rabbit-blue);
     margin: 0.5rem;
 }
 
@@ -13,7 +13,7 @@
 
 .button a, .button .link
 {
-    color: var(--rw-rabbit-eye-blue);
+    color: var(--rw-rabbit-blue);
     background-color:  var(--bg-grey-mid);
     text-decoration: none;
     align-items: center;
@@ -26,11 +26,11 @@
 
 .button:hover
 {
-    outline: 2px solid var(--rw-rabbit-eye-red);
+    outline: 2px solid var(--rw-rabbit-red);
 }
 
 .button:hover a, .button:hover .link
 {
     text-decoration: none;
-    color: var(--rw-rabbit-eye-red);
+    color: var(--rw-rabbit-red);
 }
