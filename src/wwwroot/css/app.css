@@ -1,14 +1,59 @@
 ﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
+/* Random Workings Variables */
+
+:root
+{
+    --true-black: #fff;
+    --true-white: #000;
+    --bg-grey-light: #DFDFDF;
+    --bg-grey-mid: #B2B2B255;
+    --bg-grey-dark: #B2B2B2;
+    --rw-talks-orange: #FED7BD;
+    --rw-talks-grey: #323232;
+    --rw-plays-blue: #D3EFEF;
+    --rw-plays-red: #FDADA4;
+    --rw-makes-green: #CBE1CA;
+    --rw-makes-yellow: #FEFEB4;
+    --rw-does-pink: #FEE0E8;
+    --rw-does-purple: #CBA9CA;
+    --rw-talks-orange: #FED7BD;
+    --rw-talks-orange-highlight: #FED7BD55;
+    --rw-talks-grey: #323232;
+    --rw-talks-grey-highlight: #32323255;
+    --rw-plays-blue: #D3EFEF;
+    --rw-plays-blue-highlight: #D3EFEF55;
+    --rw-plays-red: #FDADA4;
+    --rw-plays-red-highlight: #FDADA455;
+    --rw-makes-green: #CBE1CA;
+    --rw-makes-green-highlight: #CBE1CA55;
+    --rw-makes-yellow: #FEFEB4;
+    --rw-makes-yellow-highlight: #FEFEB455;
+    --rw-does-pink: #FEE0E8;
+    --rw-does-pink-highlight: #FEE0E855;
+    --rw-does-purple: #CBA9CA;
+    --rw-does-purple-highlight: #CBA9CA55;
+    --rw-rabbit-blue: #3A42FE;
+    --rw-rabbit-blue-highlight: #3A42FE66;
+    --rw-rabbit-red: #C6120C;
+    --rw-rabbit-red-highlight: #C6120C66;
+    --rw-zombie-purple: #683597;
+    --rw-zombie-orange: #C6380D;
+}
+
 html, body
 {
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+    font-family: 'Comic Sans MS', 'Comic Neue', Arial, Verdana, Tahoma, Calibri, 'Times New Roman', sans-serif, 'Segoe UI', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-weight: 400;
+    font-size: 1rem;
+    font-style: normal;
+    color: #000;
 }
 
 #app
 {
     background-image: url("/images/channel/channel-colours-diag.jpg");
-    background-color: #323232;
+    background-color: var(--rw-talks-grey);
     background-size: 100% 100%;
     background-repeat: repeat-y;
 }
@@ -18,7 +63,7 @@ h1:focus {
 }
 
 .btn-primary {
-    color: #fff;
+    color: var(--true-black);
     background-color: #1b6ec2;
     border-color: #1861ac;
 }
@@ -63,16 +108,3 @@ h1:focus {
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
-
-/* Random Workings Classes */
-
-.rw-random
-{
-    --true-black: #fff;
-    --true-white: #000;
-    --background-grey: #B2B2B2;
-    --rw-eye-right-normal: #CBA9CA;
-    --rw-eye-left-normal: #C6120C;
-    --rw-eye-right-zombie: #683597;
-    --rw-eye-left-zombie: #C6380D;
-}
