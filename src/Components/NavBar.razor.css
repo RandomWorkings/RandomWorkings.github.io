@@ -3,6 +3,7 @@
     box-shadow: 0px 0px 0px 2px #3A42FE66;
     border-radius: 0.25rem;
     border: none;
+    background-color: #DFDFDF;
 }
 
 .navbar-toggler:focus
