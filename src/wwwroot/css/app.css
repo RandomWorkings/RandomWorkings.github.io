@@ -2,11 +2,13 @@
 
 /* Random Workings Variables */
 
-.rw-random
+:root
 {
     --true-black: #fff;
     --true-white: #000;
-    --background-grey: #B2B2B2;
+    --bg-grey-light: #DFDFDF;
+    --bg-grey-mid: #B2B2B255;
+    --bg-grey-dark: #B2B2B2;
     --rw-talks-orange: #FED7BD;
     --rw-talks-grey: #323232;
     --rw-plays-blue: #D3EFEF;
@@ -25,7 +27,7 @@ html, body
 {
     font-family: 'Comic Sans MS', 'Comic Neue', Arial, Verdana, Tahoma, Calibri, 'Times New Roman', sans-serif, 'Segoe UI', 'Segoe UI Emoji', 'Segoe UI Symbol';
     font-weight: 400;
-    font-size: 12pt;
+    font-size: 1rem;
     font-style: normal;
     color: #000;
 }
@@ -33,7 +35,7 @@ html, body
 #app
 {
     background-image: url("/images/channel/channel-colours-diag.jpg");
-    background-color: #323232;
+    background-color: var(--rw-talks-grey);
     background-size: 100% 100%;
     background-repeat: repeat-y;
 }
@@ -43,7 +45,7 @@ h1:focus {
 }
 
 .btn-primary {
-    color: #fff;
+    color: var(--true-black);
     background-color: #1b6ec2;
     border-color: #1861ac;
 }

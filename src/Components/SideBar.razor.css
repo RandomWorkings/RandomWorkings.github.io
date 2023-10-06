@@ -1,6 +1,6 @@
 ﻿#sidebar
 {
-    background-color: #323232;
+    background-color: var(--rw-talks-grey);
 }
 
 .top-row
@@ -41,7 +41,7 @@
     .nav-item ::deep a
     {
         color: #000;
-        background-color: #B2B2B255;
+        background-color:  var(--bg-grey-mid);
         border-radius: 4px;
         height: 3rem;
         padding: 0.5rem;
@@ -52,13 +52,13 @@
 
         .nav-item ::deep a.active
         {
-            background-color: #B2B2B2;
+            background-color: var(--bg-grey-dark);
             color: #000;
         }
 
         .nav-item ::deep a:hover
         {
-            outline: 2px solid #C6120C;
+            outline: 2px solid var(--rw-rabbit-eye-red);
             color: #000;
         }
 
@@ -79,43 +79,43 @@
 .nav-item ::deep #rw-talks
 {
     color: #000;
-    background-color: #FED7BD55;
+    background-color:  var(rw-talks-orange)55;
 }
 
     .nav-item ::deep #rw-talks.active
     {
-        background-color: #FED7BD;
+        background-color:  var(rw-talks-orange);
     }
 
 .nav-item ::deep #rw-plays
 {
     color: #000;
-    background-color: #D3EFEF55;
+    background-color: var(--rw-plays-blue)55;
 }
 
     .nav-item ::deep #rw-plays.active
     {
-        background-color: #D3EFEF;
+        background-color: var(--rw-plays-blue);
     }
 
 .nav-item ::deep #rw-makes
 {
     color: #000;
-    background-color: #CBE1CA55;
+    background-color: var(--rw-makes-green)55;
 }
 
     .nav-item ::deep #rw-makes.active
     {
-        background-color: #CBE1CA;
+        background-color: var(--rw-makes-green);
     }
 
 .nav-item ::deep #rw-does
 {
     color: #000;
-    background-color: #FEE0E855;
+    background-color: var(--rw-does-pink)55;
 }
 
     .nav-item ::deep #rw-does.active
     {
-        background-color: #FEE0E8;
+        background-color: var(--rw-does-pink);
     }
