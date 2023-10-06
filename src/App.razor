@@ -4,9 +4,17 @@
         <FocusOnNavigate RouteData="@routeData" Selector="h1" />
     </Found>
     <NotFound>
-        <PageTitle>Not found</PageTitle>
+        <PageTitle>Page Not Found</PageTitle>
         <LayoutView Layout="@typeof(MainLayout)">
-            <p role="alert">Sorry, there's nothing at this address.</p>
+            <div>
+                <h1>Whoops! Looks like you found a link to nowhere</h1>
+
+                <p> This is a Random Workings Website Project and it is still a Work in Progress (WIP) so these things happen. </p>
+
+                <p> Sorry.</p>
+
+                <a href="/">Return Home?</a>
+            </div>
         </LayoutView>
     </NotFound>
 </Router>

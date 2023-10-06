@@ -13,7 +13,6 @@ public class ImageModel : ModelBase
     {
         var attributes = new Dictionary<string, object>
         {
-            { "id", $"{Id}-image" },
             { "class", $"image {Classes}" },
             { "src", Src },
             { "width", Width },

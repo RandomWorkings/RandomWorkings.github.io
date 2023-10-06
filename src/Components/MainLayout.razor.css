@@ -1,69 +1,99 @@
-
-.page
+#header, #body, #footer
 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    background-color: #B2B2B230;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    font-style: normal;
+    color: #000;
 }
 
-main
+#header
 {
-    flex: 1;
-}
-
-.sidebar
-{
+    padding: 0.75rem 0;
     background-color: #323232;
-    background-size: 100% 100%;
-    background-repeat: repeat-y;
 }
 
-.top-row
+@media (min-width: 992px)
 {
-    color: #fff;
-    background-color: #323232;
-    justify-content: flex-start;
-    height: 3.5rem;
-    display: flex;
-    align-items: center;
+    #body
+    {
+        display: grid;
+        grid-template-areas: "sidebar content";
+        grid-template-columns: 1fr 5fr;
+        gap: 1rem;
+    }
 }
 
-    .top-row ::deep .button
-    {        
-        border-radius: 4px;
-        background-color: #B2B2B2;
-    }
-
-@media (max-width: 640.98px)
+#pages
 {
-
-    .top-row:not(.auth) {
-        display: none;
-    }
-
-    .top-row.auth {
-        justify-content: space-between;
-    }
-
+    grid-area: sidebar;
+    display: grid;
+    order: 1;
+    gap: inherit;
+    grid-template-areas: "pages";
+    grid-template-rows: 1fr;
+    border-radius:1rem;
+    box-shadow: 0 0 0 2px #000;
 }
 
-@media (min-width: 641px) {
-    .page {
-        flex-direction: row;
+#content
+{
+    grid-area: content;
+    background-color: #DFDFDF;
+    display: grid;
+    order: 1;
+    gap: inherit;
+    grid-template-areas: "content";
+    grid-template-rows: 1fr;
+    border-radius: 1rem;
+    box-shadow: 0 0 0 2px #000;
+}
 
+
+@media (min-width: 992px)
+{
+    #content
+    {
+        grid-template-areas: "content";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr
     }
 
-    .sidebar {
-        width: 250px;
-        height: 100vh;
+    #pages
+    {
+        position: -webkit-sticky;
         position: sticky;
-        top: 0;
+        top: 5rem;
+        display: block !important;
+        height: calc(100vh - 5rem);
+        padding-left: 0.25rem;
+        margin-left: -0.25rem;
+        overflow-y: auto;
+        background-color: #323232;
     }
+}
 
-    .top-row {
-        /*position: sticky;*/
-        top: 0;
-        z-index: 1;
+@media (max-width: 991.98px)
+{
+    #content
+    {
+        max-width: 760px;
+        margin-inline: auto;
     }
+}
+
+@media (min-width: 768px)
+{
+    #content
+    {
+        display: grid;
+        grid-template-areas: "content";
+        grid-template-rows:1fr;
+        gap: inherit
+    }
+}
+
+#footer
+{
+    background-color: #323232;
 }

@@ -11,7 +11,6 @@ public class LinkModel : ModelBase
     {
         var attributes = new Dictionary<string, object>
         {
-            { "id", $"{Id}-link" },
             { "class", $"link {Classes}" },
             { "href", Href },
             { "target", Target },

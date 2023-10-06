@@ -1,10 +1,13 @@
-﻿<div @attributes=@ButtonModel.ButtonAttributes>
-    <a @attributes=@ButtonModel.Link.Attributes>
+﻿<div id="button-@ButtonModel.Id" @attributes=@ButtonModel.ButtonAttributes>
+    <a @attributes=@ButtonModel.LinkAttributes>
         <div class="row justify-content-center">
-            <div @attributes=@ButtonModel.ImageZoneAttributes>
-                <img @attributes=@ButtonModel.Image.Attributes />
-            </div>
-            <div @attributes=@ButtonModel.TextZoneAttributes>@ButtonModel.Text</div>
+            @if ( ButtonModel.Image != null )
+            {
+                <div id="button-image-@ButtonModel.Id" class="col-auto button-image">
+                   <img @attributes=@ButtonModel.ImageAttributes />
+                </div>
+            }
+            <div id="button-text-@ButtonModel.Id" class="col button-text">@ButtonModel.Text</div>
         </div>
     </a>
 </div>

@@ -1,30 +1,20 @@
 ﻿@inherits LayoutComponentBase
-
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
-
-    <main>
-        <div class="top-row row px-4">
-            <div class="col-auto"><span>Find Us Here:</span></div>
-
-            <div class="col-auto p-0">
-                <Button ButtonModel=YouTube></Button>
-            </div>
-            <div class="col-auto p-0">
-
-                <Button ButtonModel=GitHub></Button>
-
-            </div>
-            <div class="col-auto p-0 me-auto">
-                <Button ButtonModel=ReferencePage></Button>
-
-            </div>
-        </div>
-
-        <article class="px-4 pt-4">
-            @Body
-        </article>
-    </main>
+<IconStore/>
+<header id="header" class="navbar navbar-expand-lg sticky-top">
+    <NavBar />
+</header>
+<div id="body" class="container-xxl mt-3 my-md-4">
+    <aside id="pages" class="sidebar">
+        <SideBar/>
+    </aside>
+    <main id="content" class="p-4">
+        @Body
+    </main>       
 </div>
+<footer id="footer" class="py-4 py-md-5">
+    <div class="container py-4 py-md-5 px-4 px-md-3">
+        <div class="row">
+            <Button ButtonModel=UpTop></Button>
+        </div>
+    </div>
+</footer>

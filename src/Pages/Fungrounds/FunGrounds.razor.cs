@@ -10,17 +10,15 @@ partial class FunGrounds
         Text = "Treasure Hunt",
         Image = new()
         {
-            Id = "teasure-hunt",
             Src = "images/fungrounds/P32Fungrounds_Treasure.svg",
             Width  = "25px",
             Height  = "25px",
-            AlternativeText = "A pirates treasure chest",
+            AlternativeText = "A pirates treasure chest.",
         },
         Link = new() 
         {
-            Id = "teasure-hunt",
             Href = "/fungrounds/treasurehunt",
-            TitleAttribute = "Link to P32 Fungrounds treasure hunt information page"
+            TitleAttribute = "Link to the P32 Fungrounds treasure hunt rules page."
         }
     };
 
@@ -30,17 +28,15 @@ partial class FunGrounds
         Text = "Race",
         Image = new()
         {
-            Id = "race",
             Src = "images/fungrounds/P32Fungrounds_Race.svg",
             Width = "25px",
             Height = "25px",
-            AlternativeText = "A waving checkered race flag",
+            AlternativeText = "A waving checkered race flag.",
         },
         Link = new()
         {
-            Id = "race",
             Href = "/fungrounds/race",
-            TitleAttribute = "Link to P32 Fungrounds race information page"
+            TitleAttribute = "Link to the P32 Fungrounds race rules page."
         }
     };
 
@@ -50,17 +46,15 @@ partial class FunGrounds
         Text = "Hide and Seek",
         Image = new()
         {
-            Id = "hide-and-seek",
             Src = "images/fungrounds/P32Fungrounds_Hide-and-Seek.svg",
             Width = "25px",
             Height = "25px",
-            AlternativeText = "Two people playing hide and seek",
+            AlternativeText = "Two people playing hide and seek.",
         },
         Link = new()
         {
-            Id = "hide-and-seek",
             Href = "/fungrounds/hideandseek",
-            TitleAttribute = "Link to P32 Fungrounds hide and seek information page"
+            TitleAttribute = "Link to the P32 Fungrounds hide and seek rules page."
         }
     };
 
@@ -70,17 +64,15 @@ partial class FunGrounds
         Text = "Zombie Mode",
         Image = new()
         {
-            Id = "zombies",
             Src = "images/fungrounds/P32Fungrounds_Zombie.svg",
             Width = "25px",
             Height = "25px",
-            AlternativeText = "Three zombie hands raising out of disturbed earth",
+            AlternativeText = "Three zombie hands raising out of disturbed earth.",
         },
         Link = new()
         {
-            Id = "zombies",
             Href = "/fungrounds/zombies",
-            TitleAttribute = "Link to P32 Fungrounds zombies mode information page"
+            TitleAttribute = "Link to the P32 Fungrounds zombies mode information page."
         }
     };
 
@@ -90,17 +82,15 @@ partial class FunGrounds
         Text = "Parade",
         Image = new()
         {
-            Id = "parade",
             Src = "images/fungrounds/P32Fungrounds_Parade.svg",
             Width = "25px",
             Height = "25px",
-            AlternativeText = "A marching band drummer",
+            AlternativeText = "A marching band drummer.",
         },
         Link = new()
         {
-            Id = "parade",
             Href = "/fungrounds/parade",
-            TitleAttribute = "Link to P32 Fungrounds Parade information page"
+            TitleAttribute = "Link to the P32 Fungrounds Parade rules page."
         }
     };
 
@@ -110,7 +100,6 @@ partial class FunGrounds
         Text = "Riddles",
         Image = new()
         {
-            Id = "riddles",
             Src = "images/fungrounds/P32Fungrounds_Riddles.svg",
             Width = "25px",
             Height = "25px",
@@ -118,10 +107,63 @@ partial class FunGrounds
         },
         Link = new()
         {
-            Id = "riddles",
             Href = "/fungrounds/riddles",
-            TitleAttribute = "Link to P32 Fungrounds Riddles information page"
+            TitleAttribute = "Link to the P32 Fungrounds Riddles rules page."
         }
     };
 
+    public ButtonModel SharkHunt { get; set; } = new()
+    {
+        Id = "shark-hunt",
+        Text = "Shark Hunt",
+        Image = new()
+        {
+            Src = "images/fungrounds/P32Fungrounds_Shark.svg",
+            Width = "25px",
+            Height = "25px",
+            AlternativeText = "A Shark.",
+        },
+        Link = new()
+        {
+            Href = "/fungrounds/sharkhunt",
+            TitleAttribute = "Link to the P32 Shark Hunt rules page."
+        }
+    };
+
+
+    public ButtonModel Crossbows { get; set; } = new()
+    {
+        Id = "crossbows",
+        Text = "Crossbows",
+        Image = new()
+        {
+            Src = "images/fungrounds/P32Fungrounds_Crossbow.svg",
+            Width = "25px",
+            Height = "25px",
+            AlternativeText = "An crossbow.",
+        },
+        Link = new()
+        {
+            Href = "/fungrounds/crossbows",
+            TitleAttribute = "Link to the Crossbow Mode information page."
+        }
+    };
+
+    public ButtonModel WeaponVariants { get; set; } = new()
+    {
+        Id = "weapon-variants",
+        Text = "Weapon Variants",
+        Image = new()
+        {
+            Src = "images/fungrounds/P32Fungrounds_Rifle.svg",
+            Width = "25px",
+            Height = "25px",
+            AlternativeText = "An AKM looking rifle.",
+        },
+        Link = new()
+        {
+            Href = "/fungrounds/weapon-variants",
+            TitleAttribute = "Link to the Weapon Variant mode information page."
+        }
+    };
 }
