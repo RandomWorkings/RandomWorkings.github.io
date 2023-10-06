@@ -21,6 +21,12 @@
     gap: 1rem;
 }
 
+#content
+{
+    border-radius: 1rem;
+    background-color: #DFDFDF;
+}
+
 
 #pages
 {
@@ -56,5 +62,5 @@
 
 #footer
 {
-    background-color: #B2B2B2;
+    background-color: #323232;
 }
