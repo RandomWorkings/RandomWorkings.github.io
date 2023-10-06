@@ -79,7 +79,7 @@
 .nav-item ::deep #rw-talks
 {
     color: #000;
-    background-color:  var(--rw-talks-orange-higlight);
+    background-color:  var(--rw-talks-orange-highlight);
 }
 
     .nav-item ::deep #rw-talks.active
@@ -90,7 +90,7 @@
 .nav-item ::deep #rw-plays
 {
     color: #000;
-    background-color: var(--rw-plays-blue-higlight);
+    background-color: var(--rw-plays-blue-highlight);
 }
 
     .nav-item ::deep #rw-plays.active
@@ -101,7 +101,7 @@
 .nav-item ::deep #rw-makes
 {
     color: #000;
-    background-color: var(--rw-makes-green-higlight);
+    background-color: var(--rw-makes-green-highlight);
 }
 
     .nav-item ::deep #rw-makes.active
@@ -112,7 +112,7 @@
 .nav-item ::deep #rw-does
 {
     color: #000;
-    background-color: var(--rw-does-pink-higlight);
+    background-color: var(--rw-does-pink-highlight);
 }
 
     .nav-item ::deep #rw-does.active
