@@ -2,6 +2,6 @@
 
 namespace RandomWorkings.github.io.Components;
 
-partial class SideBar : Component
-{ 
+partial class Footer : Component
+{
 }

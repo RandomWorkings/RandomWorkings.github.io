@@ -1,8 +1,10 @@
-﻿@inherits LayoutComponentBase
+﻿@using RandomWorkings.github.io.Components.Shared
+@inherits LayoutComponentBase
+
 <IconStore/>
-<header id="header" class="navbar navbar-expand-lg sticky-top">
-    <NavBar />
-</header>
+
+<NavBar/>
+
 <div id="body" class="container-xxl mt-3 my-md-4">
     <aside id="pages" class="sidebar">
         <SideBar/>
@@ -11,10 +13,5 @@
         @Body
     </main>       
 </div>
-<footer id="footer" class="py-4 py-md-5">
-    <div class="container py-4 py-md-5 px-4 px-md-3">
-        <div class="row">
-            <Button ButtonModel=UpTop></Button>
-        </div>
-    </div>
-</footer>
+
+<Footer/>

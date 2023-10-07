@@ -52,20 +52,13 @@ html, body
 
 #app
 {
-    background-image: url("/images/channel/channel-colours-diag.jpg");
-    background-color: var(--rw-talks-grey);
-    background-size: 100% 100%;
+    background-image: url("/images/channel/channel-colours-vert.svg");
+    background-size: 100%;
     background-repeat: repeat-y;
 }
 
 h1:focus {
     outline: none;
-}
-
-.btn-primary {
-    color: var(--true-black);
-    background-color: #1b6ec2;
-    border-color: #1861ac;
 }
 
 .valid.modified:not([type=checkbox]) {

@@ -1,13 +1,3 @@
-#header, #body, #footer
-{
-}
-
-#header
-{
-    padding: 0.75rem 0;
-    background-color: var(--rw-talks-grey);
-}
-
 @media (min-width: 992px)
 {
     #body
@@ -71,9 +61,4 @@
     {
 
     }
-}
-
-#footer
-{
-    background-color: var(--rw-talks-grey);
 }

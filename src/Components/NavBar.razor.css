@@ -1,4 +1,10 @@
-﻿.navbar-toggler
+﻿#header
+{
+    padding: 0.75rem 0;
+    background-color: var(--rw-talks-grey);
+}
+
+.navbar-toggler
 {
     box-shadow: 0px 0px 0px 2px var(--rw-rabbit-blue-highlight);
     border-radius: 0.25rem;
@@ -35,20 +41,6 @@ nav .offcanvas-lg
         background-color: var(--bg-grey-dark);
     }
 
-@media (max-width: 640.98px)
-{
-
-    nav:not(.auth)
-    {
-        display: none;
-    }
-
-    nav.auth
-    {
-        justify-content: space-between;
-    }
-}
-
 @media (min-width: 641px)
 {
     nav
@@ -61,6 +53,11 @@ nav .offcanvas-lg
 
 @media (max-width: 991.98px)
 {
+    #navbar-toggler
+    {
+        width: 4.25rem;
+    }
+
     #sidebar-toggler
     {
         width: 4.25rem;

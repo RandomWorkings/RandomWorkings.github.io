@@ -1,15 +1,27 @@
-﻿namespace RandomWorkings.github.io.Model;
+﻿using Microsoft.AspNetCore.Components;
 
-public class ImageModel : ModelBase
+namespace RandomWorkings.github.io.Components.Shared;
+
+partial class ImageButton : Button
 {
+    [Parameter]
     public string Src { get; set; } = string.Empty;
-    public string Width { get; set; } = "100%";
-    public string Height { get; set; } = "100%";
-    public string AlternativeText { get; set; } = "Unhelpful Alternative Text for an Image";
-    public string LanguageAttribute { get; set; } = "en-gb";
-    public string LazyLoading { get; set; } = "lazy";
 
-    public override Dictionary<string, object> GenerateAttributes()
+    [Parameter] 
+    public string Width { get; set; } = "100%";
+
+    [Parameter]
+    public string Height { get; set; } = "100%";
+
+    [Parameter]
+    public string AlternativeText { get; set; } = "Unhelpful Alternative Text for an Image";
+
+    [Parameter]
+    public string LazyLoading { get; set; } = "lazy";
+    
+    public Dictionary<string, object> ImageAttributes { get => GenerateImageAttributes(); }
+
+    public Dictionary<string, object> GenerateImageAttributes()
     {
         var attributes = new Dictionary<string, object>
         {
@@ -18,7 +30,6 @@ public class ImageModel : ModelBase
             { "width", Width },
             { "height", Height },
             { "alt",  AlternativeText },
-            { "lang",  LanguageAttribute },
             { "loading", LazyLoading },
         };
 

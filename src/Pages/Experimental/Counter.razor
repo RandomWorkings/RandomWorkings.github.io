@@ -1,9 +1,13 @@
-﻿@page "/counter"
-
+﻿@using RandomWorkings.github.io.Components.Shared;
+@page "/counter"
 <PageTitle>Counter</PageTitle>
 
-<h1>Counter</h1>
+<div id="rw-counter">
 
-<p role="status">Current count: @_currentCount</p>
+    <h1>Counter</h1>
 
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+    <p role="status">Current count: @_currentCount</p>
+
+    <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+</div>

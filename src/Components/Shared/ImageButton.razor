@@ -1,0 +1,12 @@
+﻿@inherits Button
+
+<div id="button-@Id" @attributes=@BaseAttributes>
+    <a id="button-link-@Id" href=@Href target=@Target @attributes=@LinkAttributes>
+        <div class="row justify-content-center">
+            <div id="button-image-zone-@Id" class="col-auto image-zone">
+                <img id="button-image-@Id" @attributes=@ImageAttributes />
+            </div>
+            <div id="button-text-@Id" class="col button-text">@Text</div>
+        </div>
+    </a>
+</div>
