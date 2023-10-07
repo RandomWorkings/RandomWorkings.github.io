@@ -1,4 +1,10 @@
-﻿.navbar-toggler
+﻿#header
+{
+    padding: 0.75rem 0;
+    background-color: var(--rw-talks-grey);
+}
+
+.navbar-toggler
 {
     box-shadow: 0px 0px 0px 2px var(--rw-rabbit-blue-highlight);
     border-radius: 0.25rem;
