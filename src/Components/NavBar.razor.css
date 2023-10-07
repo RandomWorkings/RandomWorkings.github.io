@@ -35,20 +35,6 @@ nav .offcanvas-lg
         background-color: var(--bg-grey-dark);
     }
 
-@media (max-width: 640.98px)
-{
-
-    nav:not(.auth)
-    {
-        display: none;
-    }
-
-    nav.auth
-    {
-        justify-content: space-between;
-    }
-}
-
 @media (min-width: 641px)
 {
     nav
@@ -61,6 +47,11 @@ nav .offcanvas-lg
 
 @media (max-width: 991.98px)
 {
+    #navbar-toggler
+    {
+        width: 4.25rem;
+    }
+
     #sidebar-toggler
     {
         width: 4.25rem;

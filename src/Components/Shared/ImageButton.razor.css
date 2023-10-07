@@ -1,0 +1,36 @@
+﻿.button
+{
+    border-radius: 40px;
+    background-color: var(--bg-grey-mid);
+    outline: 2px solid var(--rw-rabbit-blue);
+    margin: 0.5rem;
+}
+
+.button-text
+{
+    padding-left: 0;
+}
+
+.button a, .button .link
+{
+    color: var(--rw-rabbit-blue);
+    background-color: var(--bg-grey-mid);
+    text-decoration: none;
+    align-items: center;
+}
+
+.button:active
+{
+    background-color: var(--bg-grey-mid);
+}
+
+.button:hover
+{
+    outline: 2px solid var(--rw-rabbit-red);
+}
+
+    .button:hover a, .button:hover .link
+    {
+        text-decoration: none;
+        color: var(--rw-rabbit-red);
+    }

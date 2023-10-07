@@ -1,33 +1,37 @@
-﻿@page "/fetchdata"
+﻿@using RandomWorkings.github.io.Components.Shared;
+@page "/fetchdata"
 @inject HttpClient Http
-
 <PageTitle>Channel Videos</PageTitle>
 
-<h1>Channel Videos</h1>
+<div id="rw-fetch">
 
-@if (_videos == null)
-{
-    <p><em>Loading...</em></p>
-}
-else
-{
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Pathway</th>
-                <th>Video Count</th>
-                <th>Pathway Link</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var forecast in _videos)
-            {
+    <h1>Channel Videos</h1>
+
+    @if (_videos == null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else
+    {
+        <table class="table">
+            <thead>
                 <tr>
-                    <td>@forecast.Pathway</td>
-                    <td>@forecast.VideoCount</td>
-                    <td><a href="@forecast.Link" target="_blank">[@forecast.Pathway Playlist]</a></td>
+                    <th>Pathway</th>
+                    <th>Video Count</th>
+                    <th>Pathway Link</th>
                 </tr>
-            }
-        </tbody>
-    </table>
-}
+            </thead>
+            <tbody>
+                @foreach (var forecast in _videos)
+                {
+                    <tr>
+                        <td>@forecast.Pathway</td>
+                        <td>@forecast.VideoCount</td>
+                        <td><a href="@forecast.Link" target="_blank">[@forecast.Pathway Playlist]</a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+
+</div>

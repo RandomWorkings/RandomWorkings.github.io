@@ -1,5 +1,7 @@
-﻿namespace RandomWorkings.github.io.Pages.Fungrounds;
+﻿using RandomWorkings.github.io.Components.Shared;
 
-partial class Race 
+namespace RandomWorkings.github.io.Pages.Fungrounds;
+
+partial class Race
 {
 }

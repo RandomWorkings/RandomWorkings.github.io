@@ -1,13 +1,7 @@
-﻿namespace RandomWorkings.github.io.Components;
+﻿using RandomWorkings.github.io.Components.Shared;
 
-partial class SideBar
-{
-    private bool _collapseNavMenu = true;
-    
-    private void ToggleNavMenu()
-    {
-        _collapseNavMenu = !_collapseNavMenu;
-    }
+namespace RandomWorkings.github.io.Components;
 
-    private string? NavMenuCssClass => _collapseNavMenu ? "collapse" : null;
+partial class SideBar : Component
+{ 
 }

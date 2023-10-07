@@ -1,33 +1,124 @@
-﻿@page "/fungrounds"
+﻿@using RandomWorkings.github.io.Components.Shared
+@page "/fungrounds"
 <PageTitle>P32 Fungrounds</PageTitle>
 
-<h1>Welcome to the P32 Fungrounds Rules Page!</h1>
+<div id="rw-fungrounds">
 
-<hr rounded />
-<h3>Community Created Modes</h3>
+    <h1>Welcome to the P32 Fungrounds Rules Page!</h1>
 
-<div>
-    <Button ButtonModel=TreasureHunt></Button>
+    <hr rounded />
+    <div>
+        <h3>Community Created Modes</h3>
 
-    <Button ButtonModel=Race></Button>
+        <div>
+            <ImageButton         
+                Id= "teasure-hunt"
+                Text = "Treasure Hunt"
+                Src="images/fungrounds/p32-treasure.svg"
+                Width  = "25px"
+                Height  = "25px"
+                AlternativeText = "A pirates treasure chest."
+                Href = "/fungrounds/treasurehunt"
+                TitleAttribute = "Link to the P32 Fungrounds treasure hunt rules page."
+            ></ImageButton>
 
-    <Button ButtonModel=HideAndSeek></Button>
-</div>
-<div>
-    <Button ButtonModel=Parade></Button>
+            <ImageButton
+                Id = "race"
+                Text = "Race"
+                Src="images/fungrounds/p32-race.svg"
+                Width = "25px"
+                Height = "25px"
+                AlternativeText = "A waving checkered race flag."
+                Href = "/fungrounds/race"
+                TitleAttribute = "Link to the P32 Fungrounds race rules page."
+            ></ImageButton>
 
-    <Button ButtonModel=Riddles></Button>
+            <ImageButton     
+                Id = "hide-and-seek"
+                Text = "Hide and Seek"
+                         Src="images/fungrounds/p32-hide-and-seek.svg"
+                Width = "25px"
+                Height = "25px"
+                AlternativeText = "Two people playing hide and seek."
+                Href = "/fungrounds/hideandseek"
+                TitleAttribute = "Link to the P32 Fungrounds hide and seek rules page."
+            ></ImageButton>
+        </div>
+        <div>
+            <ImageButton
+                Id="dog-fight"
+                Text="Dog Fight"
+                Src="images/fungrounds/p32-ww2-plane.svg"
+                Width="25px"
+                Height="25px"
+                AlternativeText=""
+                Href="/fungrounds/dog-fight"
+                TitleAttribute="Link to the P32 Fungrounds Dog Fight rules page."
+            ></ImageButton>
 
-    <Button ButtonModel=SharkHunt></Button>
-</div>
+            <ImageButton      
+                Id = "riddles"
+                Text = "Riddles"
+                Src="images/fungrounds/p32-riddles.svg"
+                Width = "25px"
+                Height = "25px"
+                AlternativeText = "Two speech bubbles. One contains a question mark. The other the three dots of an ellipsis."
+                Href = "/fungrounds/riddles"
+                TitleAttribute = "Link to the P32 Fungrounds Riddles rules page."
+            ></ImageButton>
 
-<hr rounded />
-<h3>Alternative Modes</h3>
+            <ImageButton        
+                Id = "shark-hunt"
+                Text = "Shark Hunt"
+                 Src="images/fungrounds/p32-shark.svg"
+                Width = "25px"
+                Height = "25px"
+                AlternativeText = "A Shark."
+                Href = "/fungrounds/sharkhunt"
+                TitleAttribute = "Link to the P32 Shark Hunt rules page."
+            ></ImageButton>
+        </div>
+        <div>
+            <ImageButton  
+                Id = "parade"
+                Text = "Parade"
+                Src="images/fungrounds/p32-parade.svg"
+                Width = "25px"
+                Height = "25px"
+                AlternativeText = "A marching band drummer."
+                Href = "/fungrounds/parade"
+                TitleAttribute = "Link to the P32 Fungrounds Parade rules page."
+            ></ImageButton>
+        </div>
 
-<div>
-    <Button ButtonModel=WeaponVariants></Button>
+        <hr rounded />
 
-    <Button ButtonModel=Zombies></Button>
+        <h3>Alternative Modes</h3>
 
-    <Button ButtonModel=Crossbows></Button>
+        <div>
+            <ImageButton 
+                Id = "weapon-variants"
+                Text = "Weapon Variants"
+                Src="images/fungrounds/p32-crossbow.svg"
+                Width = "25px"
+                Height = "25px"
+                AlternativeText = "An AKM looking rifle."
+                Href = "/fungrounds/weapon-variants"
+                TitleAttribute="Link to the variant weapon mode information page."
+            ></ImageButton>
+
+            <ImageButton   
+                Id = "mode-variants"
+                Text = "Game Mode Variants"
+                Src="images/fungrounds/p32-zombie.svg"
+                Width = "25px"
+                Height = "25px"
+                AlternativeText = "Three zombie hands raising out of disturbed earth."
+                Href = "/fungrounds/zombies"
+                TitleAttribute = "Link to the P32 Fungrounds variant game mode information page."
+            ></ImageButton>
+
+        </div>
+    </div>
+
 </div>
