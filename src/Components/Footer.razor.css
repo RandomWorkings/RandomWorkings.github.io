@@ -1,6 +1,7 @@
 ﻿#footer
 {
-    background-color: var(--rw-talks-grey);
+    border-top: 5px solid;
+    background-color: var(--rw-talks-grey-dark);
 }
 
 .footer
@@ -10,18 +11,24 @@
     justify-content: space-between;
 }
 
-#footer-icon
+#footer-brand img
 {
-    grid-area: logo;
+    width: 50px;
+}
+
+@media(min-width: 575px)
+{
+    #footer-brand img
+    {
+        width: 100px;
+    }
 }
 
 #button-jump-to-top
 {
-    grid-area: jumpbutton;
     width: auto;
 }
 
 #footer-text
 {
-    grid-area: poweredBy;
 }
