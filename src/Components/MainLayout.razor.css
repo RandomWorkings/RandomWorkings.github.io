@@ -52,6 +52,7 @@
     {
         max-width: 760px;
         margin-inline: auto;
+        min-height: calc(100vh - 5rem);
     }
 }
 

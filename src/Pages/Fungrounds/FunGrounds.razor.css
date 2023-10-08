@@ -7,19 +7,30 @@
         width: auto;
     }
 
-    #rw-fungrounds ::deep .button:nth-child(2n+1)
+    #rw-fungrounds ::deep .button:nth-child(n)
     {
         background-color: var(--rw-plays-blue);
     }
 
-    #rw-fungrounds ::deep .button:nth-child(2n+2)
+    #rw-fungrounds ::deep .button:nth-child(2n)
     {
         background-color: var(--rw-plays-red);
     }
 
+
 #button-deck
 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 0rem;
+}
+
+@media (min-width: 768px)
+{
+    #button-deck
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0rem;
+    }
 }

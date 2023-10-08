@@ -16,19 +16,32 @@
     width: 50px;
 }
 
-@media(min-width: 575px)
-{
-    #footer-brand img
-    {
-        width: 100px;
-    }
-}
-
 #button-jump-to-top
 {
     width: auto;
 }
 
-#footer-text
+@media (max-width: 575px)
 {
+    #footer
+    {
+    }
+
+    #footer-text
+    {
+        font-size: 0.8rem;
+    }
+
+    #footer-brand
+    {
+        display: none;
+    }
+}
+
+@media (min-width: 575px)
+{
+    #footer-text
+    {
+        font-size: 1rem;
+    }
 }

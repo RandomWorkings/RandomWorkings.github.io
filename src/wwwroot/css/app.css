@@ -46,35 +46,22 @@
     --rw-zombie-orange: #C6380D;
 }
 
-html, body
-{
-    font-family: 'Comic Sans MS', 'Comic Neue', Arial, Verdana, Tahoma, Calibri, 'Times New Roman', sans-serif, 'Segoe UI', 'Segoe UI Emoji', 'Segoe UI Symbol';
-    font-weight: 400;
-    font-style: normal;
-    color: #000;
-}
-
-@media (max-width: 575px)
-{
-    html, body
-    {
-        font-size: 0.8rem;
-    }
-}
-
-@media (min-width: 576px)
-{
-    html, body
-    {
-        font-size: 1rem;    
-    }
-}
 
 #app
 {
     background-image: url("/images/channel/channel-colours-vert.svg");
     background-size: 100%;
     background-repeat: repeat-y;
+}
+
+
+html, body
+{
+    font-family: 'Comic Sans MS', 'Comic Neue', Arial, Verdana, Tahoma, Calibri, 'Times New Roman', sans-serif, 'Segoe UI', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+    font-size: 1rem;
 }
 
 h1:focus
