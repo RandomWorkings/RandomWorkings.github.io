@@ -4,6 +4,7 @@
     background-color: var(--bg-grey-mid);
     outline: 2px solid var(--rw-rabbit-blue);
     margin: 0.5rem;
+    width: fit-content;
 }
 
 .button-text

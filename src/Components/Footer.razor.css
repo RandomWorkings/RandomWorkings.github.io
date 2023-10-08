@@ -2,3 +2,26 @@
 {
     background-color: var(--rw-talks-grey);
 }
+
+.footer
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer-icon
+{
+    grid-area: logo;
+}
+
+#button-jump-to-top
+{
+    grid-area: jumpbutton;
+    width: auto;
+}
+
+#footer-text
+{
+    grid-area: poweredBy;
+}

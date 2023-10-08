@@ -4,17 +4,30 @@
 <footer id="footer" class="py-4 py-md-5">
     <div class="container py-4 py-md-5 px-4 px-md-3">
 
-        <div class="row">
+        <div class="footer">
+            
+            <a id="footer-icon" class="navbar-brand" href="/" aria-label="Random Workings Logo">
+                <img loading="lazy" src="images/icons/random-workings/rw-logo.svg" width=50 />
+            </a>
 
-            <ImageButton Id="jump-to-top"
-                         Text="Back To Top"
-                         Src="images/icons/common/icon-up-angles.svg"
-                         Width="15px"
-                         Height="15px"
-                         AlternativeText="Double chevron pointing upward"
-                         Href="#header"
-                         TitleAttribute="Link to pull you up to top of page"></ImageButton>
+            <JumpToTopButton 
+                Id="jump-to-top"
+                Text="Back To Top"
+                Src="images/icons/common/icon-up-angles.svg"
+                Width="15px"
+                Height="15px"
+                AlternativeText="Double chevron pointing upward"
+                Href="#header"
+                TitleAttribute="Link to pull you up to top of page"
+            ></JumpToTopButton>
+
+            <div>
+                <a id="footer-text" class="col-auto" href="https://docs.github.com/en/pages">
+                    Powered by GitHub Pages
+                </a>
+            </div>
 
         </div>
     </div>
 </footer>
+
