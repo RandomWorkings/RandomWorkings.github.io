@@ -1,4 +1,9 @@
-﻿.button
+﻿.row
+{
+    flex-wrap: none;
+}
+
+.button
 {
     border-radius: 40px;
     background-color: var(--rw-talks-grey-light);
