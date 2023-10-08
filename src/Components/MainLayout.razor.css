@@ -17,7 +17,7 @@
 #content
 {
     grid-area: content;
-    background-color: var(--bg-grey-light);    
+    background-color: var(--rw-talks-grey-light);    
     order: 1;    
     border-radius: 1rem;
     box-shadow: 0 0 0 2px #000;
@@ -40,7 +40,7 @@
         padding-left: 0.25rem;
         margin-left: -0.25rem;
         overflow-y: auto;
-        background-color: var(--bg-grey-dark);
+        background-color: var(--rw-talks-grey-light);
         border-radius: 1rem;
         box-shadow: 0 0 0 2px #000;
     }

@@ -38,7 +38,7 @@
     {
         outline: 2px solid var(--rw-rabbit-blue);
         color: #000;
-        background-color: var(--bg-grey-dark);
+        background-color: var(--rw-talks-grey-tint-55);
         border-radius: 4px;
         height: 3rem;
         padding: 0.5rem;
@@ -49,8 +49,9 @@
 
         .nav-item ::deep a.active
         {
-            background-color: var(--bg-grey-light);
+            background-color: var(--rw-talks-grey-dark);
             color: #000;
+            outline: 2px solid var(--rw-zombie-orange);
         }
 
         .nav-item ::deep a:hover
@@ -59,47 +60,55 @@
             color: #000;
         }
 
+@media (min-width: 641px)
+{
+    .collapse
+    {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+}
 
 .nav-item ::deep #rw-talks
 {
     color: #000;
-    background-color:  var(--rw-talks-orange-highlight);
+    background-color:  var(--rw-talks-orange-light);
 }
 
     .nav-item ::deep #rw-talks.active
     {
-        background-color:  var(--rw-talks-orange);
+        background-color:  var(--rw-talks-orange-dark);
     }
 
 .nav-item ::deep #rw-plays
 {
     color: #000;
-    background-color: var(--rw-plays-blue-highlight);
+    background-color: var(--rw-plays-blue-light);
 }
 
     .nav-item ::deep #rw-plays.active
     {
-        background-color: var(--rw-plays-blue);
+        background-color: var(--rw-plays-blue-dark);
     }
 
 .nav-item ::deep #rw-makes
 {
     color: #000;
-    background-color: var(--rw-makes-green-highlight);
+    background-color: var(--rw-makes-green-light);
 }
 
     .nav-item ::deep #rw-makes.active
     {
-        background-color: var(--rw-makes-green);
+        background-color: var(--rw-makes-green-dark);
     }
 
 .nav-item ::deep #rw-does
 {
     color: #000;
-    background-color: var(--rw-does-pink-highlight);
+    background-color: var(--rw-does-pink-light);
 }
 
     .nav-item ::deep #rw-does.active
     {
-        background-color: var(--rw-does-pink);
+        background-color: var(--rw-does-pink-dark);
     }

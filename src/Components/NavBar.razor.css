@@ -2,7 +2,7 @@
 {
     padding: 0.75rem 0;
     border-bottom: 5px solid;
-    background-color: var(--bg-grey-dark);
+    background-color: var(--rw-talks-grey-dark);
 }
 
 .offcanvas-body
@@ -13,10 +13,10 @@
 
 .navbar-toggler
 {
-    box-shadow: 0px 0px 0px 2px var(--rw-rabbit-blue-highlight);
+    box-shadow: 0px 0px 0px 2px var(--rw-rabbit-blue-tint-55);
     border-radius: 0.25rem;
     border: none;
-    background-color: var(--bg-grey-light);
+    background-color: var(--rw-talks-grey-light);
 }
 
 .navbar-toggler:focus
@@ -70,7 +70,7 @@ nav .offcanvas-lg
         z-index: 1;
     }
 
-    .navbar-toggler, .offcanvas-title
+    .offcanvas-title
     {
         display: none;
     }

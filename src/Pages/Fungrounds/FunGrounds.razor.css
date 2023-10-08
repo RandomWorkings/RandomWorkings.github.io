@@ -4,4 +4,22 @@
 
     #rw-fungrounds ::deep .button
     {
+        width: auto;
     }
+
+    #rw-fungrounds ::deep .button:nth-child(2n+1)
+    {
+        background-color: var(--rw-plays-blue);
+    }
+
+    #rw-fungrounds ::deep .button:nth-child(2n+2)
+    {
+        background-color: var(--rw-plays-red);
+    }
+
+#button-deck
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0rem;
+}

@@ -1,0 +1,16 @@
+﻿#home-brand
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    #home-brand img
+    {
+        min-width: 50px;
+        max-height: 100px;
+        margin-right: auto;
+        margin-left: auto;
+    }
