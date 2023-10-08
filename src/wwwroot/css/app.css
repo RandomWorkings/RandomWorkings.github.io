@@ -4,11 +4,11 @@
 
 :root
 {
-    --true-black: #fff;
+    --true-black: #FFF;
     --true-white: #000;
-    --rw-talks-orange-light: #f8d9c5;
+    --rw-talks-orange-light: #F8D9C5;
     --rw-talks-orange: #FED7BD;
-    --rw-talks-orange-dark: #f8b588;
+    --rw-talks-orange-dark: #F8B588;
     --rw-talks-orange-tint-55: #FED7BD55;
     --rw-talks-grey-light: #DFDFDF;
     --rw-talks-grey: #323232;
@@ -22,17 +22,17 @@
     --rw-plays-red: #FDADA4;
     --rw-plays-red-dark: #FD978B;
     --rw-plays-red-tint-55: #FDADA455;
-    --rw-makes-green-light: #dde9dc;
+    --rw-makes-green-light: #DDE9DC;
     --rw-makes-green: #CBE1CA;
-    --rw-makes-green-dark: #afe7ac;
+    --rw-makes-green-dark: #AFE7AC;
     --rw-makes-green-tint-55: #CBE1CA55;
     --rw-makes-yellow-light: #FEFEB4;
     --rw-makes-yellow: #FEFEB4;
     --rw-makes-yellow-dark: #FEFEB4;
     --rw-makes-yellow-tint-55: #FEFEB455;
-    --rw-does-pink-light: #fce5eb;
+    --rw-does-pink-light: #FCE5EB;
     --rw-does-pink: #FEE0E8;
-    --rw-does-pink-dark: #f8c1d0;
+    --rw-does-pink-dark: #F8C1D0;
     --rw-does-pink-tint-55: #FEE0E855;
     --rw-does-purple-light: #CBA9CA;
     --rw-does-purple: #CBA9CA;
