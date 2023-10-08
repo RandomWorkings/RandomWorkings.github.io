@@ -77,8 +77,13 @@ h1:focus
     outline: none;
 }
 
-.valid.modified:not([type=checkbox])
-{
+.btn-primary {
+    color: var(--true-black);
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.valid.modified:not([type=checkbox]) {
     outline: 1px solid #26b050;
 }
 
