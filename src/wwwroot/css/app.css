@@ -7,8 +7,8 @@
     --true-black: #fff;
     --true-white: #000;
     --bg-grey-light: #DFDFDF;
-    --bg-grey-mid: #B2B2B255;
     --bg-grey-dark: #B2B2B2;
+    --bg-grey-highlight: #B2B2B255;
     --rw-talks-orange: #FED7BD;
     --rw-talks-grey: #323232;
     --rw-plays-blue: #D3EFEF;
@@ -77,10 +77,9 @@ h1:focus
     outline: none;
 }
 
-.btn-primary {
-    color: var(--true-black);
-    background-color: #1b6ec2;
-    border-color: #1861ac;
+button:focus:not(:focus-visible)
+{
+    outline: 2px solid var(--rw-zombie-purple);
 }
 
 .valid.modified:not([type=checkbox]) {

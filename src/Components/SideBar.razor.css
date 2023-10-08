@@ -3,20 +3,10 @@
     background-color: var(--rw-talks-grey);
 }
 
-.top-row
-{
-    height: 3.5rem;
-}
-
 .nav-link
 {
     display: grid;
     gap: 0;
-}
-
-.navbar-brand
-{
-    font-size: 1.1rem;
 }
 
 .oi
@@ -46,8 +36,9 @@
 
     .nav-item ::deep a
     {
+        outline: 2px solid var(--rw-rabbit-blue);
         color: #000;
-        background-color:  var(--bg-grey-mid);
+        background-color: var(--bg-grey-dark);
         border-radius: 4px;
         height: 3rem;
         padding: 0.5rem;
@@ -58,7 +49,7 @@
 
         .nav-item ::deep a.active
         {
-            background-color: var(--bg-grey-dark);
+            background-color: var(--bg-grey-light);
             color: #000;
         }
 
@@ -68,19 +59,6 @@
             color: #000;
         }
 
-@media (min-width: 641px)
-{
-    .navbar-toggler
-    {
-        display: none;
-    }
-
-    .collapse
-    {
-        /* Never collapse the sidebar for wide screens */
-        display: block;
-    }
-}
 
 .nav-item ::deep #rw-talks
 {

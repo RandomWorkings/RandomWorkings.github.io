@@ -1,7 +1,14 @@
 ﻿#header
 {
     padding: 0.75rem 0;
-    background-color: var(--rw-talks-grey);
+    border-bottom: 5px solid;
+    background-color: var(--bg-grey-dark);
+}
+
+.offcanvas-body
+{
+    align-items: center;
+    justify-content: end;
 }
 
 .navbar-toggler
@@ -38,8 +45,21 @@ nav .offcanvas-lg
     nav ::deep .button
     {
         border-radius: 4px;
-        background-color: var(--bg-grey-dark);
     }
+
+#navbar-brand img
+{
+    width: 50px;
+}
+
+@media(min-width: 575px)
+{
+    #navbar-brand img
+    {
+        width: 100px;
+    }
+}
+
 
 @media (min-width: 641px)
 {
@@ -48,6 +68,11 @@ nav .offcanvas-lg
         /*position: sticky;*/
         top: 0;
         z-index: 1;
+    }
+
+    .navbar-toggler, .offcanvas-title
+    {
+        display: none;
     }
 }
 

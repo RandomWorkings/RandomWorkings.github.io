@@ -5,6 +5,7 @@
         display: grid;
         grid-template-areas: "sidebar content";
         grid-template-columns: auto 5fr;
+        gap: 1rem;
     }
 }
 
@@ -39,7 +40,7 @@
         padding-left: 0.25rem;
         margin-left: -0.25rem;
         overflow-y: auto;
-        background-color: var(--rw-talks-grey);
+        background-color: var(--bg-grey-dark);
         border-radius: 1rem;
         box-shadow: 0 0 0 2px #000;
     }

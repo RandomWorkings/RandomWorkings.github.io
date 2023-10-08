@@ -1,12 +1,7 @@
-﻿.row
-{
-    flex-wrap: none;
-}
-
-.button
+﻿.button
 {
     border-radius: 40px;
-    background-color: var(--bg-grey-mid);
+    background-color: var(--bg-grey-light);
     outline: 2px solid var(--rw-rabbit-blue);
     margin: 0.5rem;
     width: fit-content;
@@ -20,14 +15,14 @@
 .button a, .button .link
 {
     color: var(--rw-rabbit-blue);
-    background-color: var(--bg-grey-mid);
+    background-color: var(--bg-grey-light);
     text-decoration: none;
     align-items: center;
 }
 
 .button:active
 {
-    background-color: var(--bg-grey-mid);
+    background-color: var(--bg-grey-light);
 }
 
 .button:hover
