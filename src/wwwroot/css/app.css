@@ -6,13 +6,13 @@
 {
     --true-black: #FFF;
     --true-white: #000;
+    --rw-notice-grey-light: #DFDFDF;
+    --rw-notice-grey-dark: #B2B2B2;
     --rw-talks-orange-light: #F8D9C5;
     --rw-talks-orange: #FED7BD;
     --rw-talks-orange-dark: #F8B588;
     --rw-talks-orange-tint-55: #FED7BD55;
-    --rw-talks-grey-light: #DFDFDF;
     --rw-talks-grey: #323232;
-    --rw-talks-grey-dark: #B2B2B2;
     --rw-talks-grey-tint-55: #B2B2B255;
     --rw-plays-blue-light: #E1EFEF;
     --rw-plays-blue: #D3EFEF;
@@ -57,7 +57,7 @@
 
 html, body
 {
-    font-family: 'Comic Sans MS', Arial, Verdana, Tahoma, Calibri, 'Times New Roman', sans-serif, 'Segoe UI', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-family: Arial, Verdana, Tahoma, Calibri, 'Times New Roman', sans-serif, 'Segoe UI', 'Segoe UI Emoji', 'Segoe UI Symbol';
     font-weight: 400;
     font-style: normal;
     color: #000;
@@ -76,12 +76,176 @@ hr
     opacity: .5;
 }
 
+#button-deck
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0rem;
+}
+
+@media (min-width: 768px)
+{
+    #button-deck
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0rem;
+    }
+}
+
 #app
 {
     background-image: url("/images/channel/channel-colours-vert.svg");
     background-size: 100%;
     background-repeat: repeat-y;
 }
+
+.rw-fungrounds h1
+{
+    margin: 0 0 2rem 0;
+}
+
+.rw-fungrounds h6
+{
+    margin: 2rem 0 1rem 0;
+    text-decoration: underline;
+}
+
+.rw-fungrounds p
+{
+    margin: 1rem 0 0 0;
+    padding: 0;
+}
+
+.rw-fungrounds ul
+{
+    padding-left: 1rem;
+}
+
+.rw-fungrounds ul li
+{
+    margin: 1rem 0 1rem 0;
+}
+
+.rw-fungrounds img
+{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 1rem auto;
+}
+
+.winCondition
+{
+    outline: 5px solid green;
+    width: fit-content;
+    padding: 1rem;
+    margin: 2rem auto 2rem auto;
+    text-align: center;
+}
+
+    .winCondition p:first-child
+    {
+        margin: 0;
+    }
+
+.matchSettings
+{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0;
+}
+
+    .matchSettings .settings-row:first-child, .matchSettings .settings-row:nth-child(2)
+    {
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+    }
+
+    .matchSettings .settings-row:nth-child(2n+1)
+    {
+        border-left: 1px solid #000;
+        border-right: 1px dotted #000;
+    }
+
+    .matchSettings .settings-row:nth-child(2n)
+    {
+        border-right: 1px solid #000;
+    }
+
+    .matchSettings .settings-row
+    {
+        padding: 1rem;
+        border-bottom: 1px solid #000;
+    }
+
+    .matchSettings p
+    {
+        margin: 0;
+    }
+
+.split-content
+{
+    display: grid;
+    grid-template-areas: "main support";
+    grid-template-columns: 1fr auto;
+    gap: 1rem 0;
+}
+
+.main-content
+{
+    grid-area: main;
+}
+
+.support-content
+{
+    grid-area: support;
+}
+
+.graphic-with-caption
+{
+    width: fit-content;
+    margin: 0.25rem auto 1rem auto;
+}
+
+    .graphic-with-caption p
+    {
+        font-size: 0.8rem;
+        width: fit-content;
+        padding: 0 0 0.25rem 0 ;
+        font-style: italic;
+        margin: 0 auto;
+    }
+
+    .graphic-with-caption img
+    {
+        margin: 0 auto;
+    }
+
+.nested-list
+{
+    list-style-type: none;
+}
+
+.paragraph
+{
+    margin: 1.5rem 0 0 0;
+    padding: 0;
+}
+
+    .paragraph p
+    {
+        margin: 1rem 0 0 0;
+        padding: 0 0 0 1rem;
+        text-indent: -1rem;
+    }
+
+        .paragraph p:not(:first-child)
+        {
+            margin: 0;
+        }
 
 h1:focus
 {

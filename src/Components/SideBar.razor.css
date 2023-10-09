@@ -49,7 +49,7 @@
 
         .nav-item ::deep a.active
         {
-            background-color: var(--rw-talks-grey-dark);
+            background-color: var(--rw-notice-grey-dark);
             color: #000;
             outline: 2px solid var(--rw-zombie-orange);
         }
