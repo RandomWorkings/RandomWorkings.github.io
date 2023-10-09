@@ -2,12 +2,6 @@
 {
 }
 
-#rw-fungrounds p
-{
-    margin: 1rem 0 0 0;
-    padding: 0;
-}
-
     #rw-fungrounds ::deep .button
     {
         width: auto;
@@ -22,21 +16,3 @@
     {
         background-color: var(--rw-plays-red);
     }
-
-
-#button-deck
-{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0rem;
-}
-
-@media (min-width: 768px)
-{
-    #button-deck
-    {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 0rem;
-    }
-}
