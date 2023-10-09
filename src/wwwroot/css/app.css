@@ -64,6 +64,18 @@ html, body
     font-size: 1rem;
 }
 
+h1, h2, h3, h4, h5, h6
+{
+    font-weight: 700;
+}
+
+hr
+{
+    width: 75%;
+    margin: 1rem auto 1rem auto;
+    opacity: .5;
+}
+
 h1:focus
 {
     outline: none;

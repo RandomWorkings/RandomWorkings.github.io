@@ -2,12 +2,18 @@
 {
 }
 
+#rw-fungrounds p
+{
+    margin: 1rem 0 0 0;
+    padding: 0;
+}
+
     #rw-fungrounds ::deep .button
     {
         width: auto;
     }
 
-    #rw-fungrounds ::deep .button:nth-child(n)
+    #rw-fungrounds ::deep .button:nth-child(2n+1)
     {
         background-color: var(--rw-plays-blue);
     }

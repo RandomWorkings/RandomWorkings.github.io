@@ -1,5 +1,5 @@
 ﻿namespace RandomWorkings.github.io.Pages.Fungrounds;
 
-partial class WeaponVariants
+partial class ModeVariant
 {
 }
