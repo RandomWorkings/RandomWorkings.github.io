@@ -76,6 +76,13 @@ hr
     opacity: .5;
 }
 
+#app
+{
+    background-image: url("/images/channel/channel-colours-vert.svg");
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+
 h1:focus
 {
     outline: none;
