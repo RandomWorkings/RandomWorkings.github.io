@@ -1,3 +1,8 @@
 ﻿#rw-shark-hunt
 {
 }
+
+#shark-hunt-limits, #shark-hunt-costume
+{
+    max-height: 300px;
+}
