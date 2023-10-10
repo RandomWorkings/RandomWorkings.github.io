@@ -75,10 +75,10 @@ a
     text-decoration: none;
 }
 
-a:hover
-{
-    outline: 2px solid var(--rw-rabbit-red);
-}
+    a:hover
+    {
+        outline: 2px solid var(--rw-rabbit-red);
+    }
 
     a:visited
     {
@@ -89,6 +89,11 @@ a:hover
     {
         outline: 2px solid var(--rw-zombie-purple);
     }
+
+.navbar-brand:hover, .navbar-brand:visited, .navbar-brand:visited:hover
+{
+    outline: none;
+}
 
 hr
 {
