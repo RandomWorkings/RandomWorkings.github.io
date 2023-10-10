@@ -75,10 +75,10 @@ a
     text-decoration: none;
 }
 
-a:hover
-{
-    outline: 2px solid var(--rw-rabbit-red);
-}
+    a:hover
+    {
+        outline: 2px solid var(--rw-rabbit-red);
+    }
 
     a:visited
     {
@@ -90,12 +90,34 @@ a:hover
         outline: 2px solid var(--rw-zombie-purple);
     }
 
+.navbar-brand:hover, .navbar-brand:visited, .navbar-brand:visited:hover
+{
+    outline: none;
+}
+
 hr
 {
     width: 75%;
     margin: 1rem auto 1rem auto;
     opacity: .5;
 }
+
+h1 img
+{
+    display: inline !important;
+    padding: 0 0 0 0 !important;
+    margin: auto 0 auto 0 !important;
+    width: fit-content !important;
+    max-height: calc(1.375rem + 1.5vw) !important;
+}
+    h1 img:first-child
+    {
+        padding: 0 1rem 0 0 !important;
+    }
+    h1 img:last-child
+    {
+        padding: 0 0 0 1rem !important;
+    }
 
 #button-deck
 {
@@ -119,11 +141,6 @@ hr
     background-image: url("/images/channel/channel-colours-vert.svg");
     background-size: 100%;
     background-repeat: repeat-y;
-}
-
-.rw-fungrounds h1
-{
-    margin: 0 0 2rem 0;
 }
 
 .rw-fungrounds h6
