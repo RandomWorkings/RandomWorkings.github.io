@@ -72,12 +72,11 @@ h1, h2, h3, h4, h5, h6
 a
 {
     color: var(--rw-rabbit-blue);
-    text-decoration: none;
 }
 
     a:hover
     {
-        outline: 2px solid var(--rw-rabbit-red);
+        color: var(--rw-rabbit-red);
     }
 
     a:visited
@@ -87,10 +86,31 @@ a
 
     a:visited:hover
     {
+        color: var(--rw-zombie-purple);
+    }
+
+a > img
+{
+    outline: 2px solid var(--rw-rabbit-blue);
+    text-decoration: none;
+}
+
+    a:hover > img
+    {
+        outline: 2px solid var(--rw-rabbit-red);
+    }
+
+    a:visited > img
+    {
+        outline: 2px solid var(--rw-zombie-orange);
+    }
+
+    a:visited:hover > img
+    {
         outline: 2px solid var(--rw-zombie-purple);
     }
 
-.navbar-brand:hover, .navbar-brand:visited, .navbar-brand:visited:hover
+.navbar-brand > img, .navbar-brand:hover > img, .navbar-brand:visited > img, .navbar-brand:visited:hover > img
 {
     outline: none;
 }
@@ -134,6 +154,11 @@ h1 img
         grid-template-columns: 1fr 1fr 1fr;
         gap: 0rem;
     }
+}
+
+.underline
+{
+    text-decoration: underline;
 }
 
 #app
