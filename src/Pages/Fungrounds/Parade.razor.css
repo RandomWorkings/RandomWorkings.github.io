@@ -1,3 +1,25 @@
 ﻿#rw-parade
 {
 }
+
+@media (min-width: 768px)
+{
+    .two-image-spread
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .four-image-spread
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+}
+
+.two-image-spread img, .four-image-spread img
+{
+    max-height: 300px;
+}

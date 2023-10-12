@@ -217,18 +217,34 @@ h1 img
     margin: 1rem auto;
 }
 
-.winCondition
+.winCondition, .learnings
 {
-    outline: 5px solid green;
+    outline: 5px solid;
     width: fit-content;
     padding: 1rem;
     margin: 2rem auto 2rem auto;
     text-align: center;
 }
 
-    .winCondition p:first-child
+.winCondition
+{
+    outline-color: green;
+}
+
+.learnings
+{
+    outline-color: var(--rw-zombie-purple);
+}
+
+    .winCondition p:first-child, .learnings p:first-child
     {
-        margin: 0;
+        margin: 0 0 1rem 0;
+        text-decoration: underline;
+    }
+
+    .winCondition p:not(:first-child), .learnings p:not(:first-child)
+    {
+        margin: 0 0 0 0;
     }
 
 .matchSettings
