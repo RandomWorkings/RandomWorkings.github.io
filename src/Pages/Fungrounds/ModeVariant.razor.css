@@ -1,3 +1,13 @@
 ﻿#rw-mode-variant
 {
 }
+
+    #rw-mode-variant ::deep .tab-active
+    {
+        background-color: var(--rw-plays-blue);
+    }
+
+    #rw-mode-variant ::deep .tab-inactive
+    {
+        background-color: var(--rw-plays-red);
+    }

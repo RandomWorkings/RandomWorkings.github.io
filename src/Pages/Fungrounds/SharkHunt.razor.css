@@ -1,6 +1,15 @@
 ﻿#rw-shark-hunt
 {
 }
+    #rw-shark-hunt ::deep .tab-active
+    {
+        background-color: var(--rw-plays-blue);
+    }
+
+    #rw-shark-hunt ::deep .tab-inactive
+    {
+        background-color: var(--rw-plays-red);
+    }
 
 #shark-hunt-limits, #shark-hunt-costume
 {

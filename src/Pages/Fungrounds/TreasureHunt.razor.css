@@ -1,6 +1,15 @@
 ﻿#rw-treasure-hunt
 {
 }
+    #rw-treasure-hunt ::deep .tab-active
+    {
+        background-color: var(--rw-plays-blue);
+    }
+
+    #rw-treasure-hunt ::deep .tab-inactive
+    {
+        background-color: var(--rw-plays-red);
+    }
 
 @media (min-width: 768px)
 {

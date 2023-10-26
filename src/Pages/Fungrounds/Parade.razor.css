@@ -2,6 +2,16 @@
 {
 }
 
+    #rw-parade ::deep .tab-active
+    {
+        background-color: var(--rw-plays-blue);
+    }
+
+    #rw-parade ::deep .tab-inactive
+    {
+        background-color: var(--rw-plays-red);
+    }
+
 @media (min-width: 768px)
 {
     .two-image-spread

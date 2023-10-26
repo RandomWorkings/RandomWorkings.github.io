@@ -1,3 +1,13 @@
 ﻿#rw-demolition-derby
 {
 }
+
+    #rw-demolition-derby ::deep .tab-active
+    {
+        background-color: var(--rw-plays-blue);
+    }
+
+    #rw-demolition-derby ::deep .tab-inactive
+    {
+        background-color: var(--rw-plays-red);
+    }

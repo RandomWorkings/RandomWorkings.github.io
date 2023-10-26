@@ -1,6 +1,15 @@
 ﻿#rw-dog-fight
 {
 }
+    #rw-dog-fight ::deep .tab-active
+    {
+        background-color: var(--rw-plays-blue);
+    }
+
+    #rw-dog-fight ::deep .tab-inactive
+    {
+        background-color: var(--rw-plays-red);
+    }
 
 #dog-fight-landing-strips
 {

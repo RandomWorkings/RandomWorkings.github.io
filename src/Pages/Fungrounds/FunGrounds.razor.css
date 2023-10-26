@@ -16,3 +16,13 @@
     {
         background-color: var(--rw-plays-red);
     }
+
+    #rw-fungrounds ::deep .tab-active
+    {
+        background-color: var(--rw-plays-blue);
+    }
+
+    #rw-fungrounds ::deep .tab-inactive
+    {
+        background-color: var(--rw-plays-red);
+    }

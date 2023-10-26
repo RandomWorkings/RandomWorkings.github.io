@@ -1,3 +1,13 @@
 ﻿#rw-weapon-variant
 {
 }
+
+    #rw-weapon-variant ::deep .tab-active
+    {
+        background-color: var(--rw-plays-blue);
+    }
+
+    #rw-weapon-variant ::deep .tab-inactive
+    {
+        background-color: var(--rw-plays-red);
+    }
