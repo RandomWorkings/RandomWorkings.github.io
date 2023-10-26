@@ -19,11 +19,6 @@ partial class TabControl
         StateHasChanged();
     }
 
-    public string GetButtonClass( TabPage page )
-    {
-        return page == ActivePage ? "btn-primary" : "btn-secondary";
-    }
-
     public void ActivatePage( TabPage page )
     {
         ActivePage = page;

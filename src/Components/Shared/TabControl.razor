@@ -1,15 +1,17 @@
-﻿<div id="button-deck" class="mb-3" role="group">
+﻿<div id="section-tabs" class="mb-3" role="group">
   
 @foreach (TabPage tabPage in Pages)
   {
-    <button type="button"
-      class="btn @GetButtonClass(tabPage)"
-      @onclick=@( () => ActivatePage(tabPage) )>
-      @tabPage.TabLabel
-    </button>
+        <button type="button"
+                class="btn tab"
+                @onclick=@( () => ActivatePage(tabPage) )>
+                @tabPage.TabLabel
+        </button>
   }
 
 </div>
+
+<hr />
 
 <CascadingValue Value="this">
     @ChildContent
