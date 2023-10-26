@@ -1,21 +1,21 @@
 ﻿@using RandomWorkings.github.io.Components.Shared;
-@page "/fungrounds/hideandseek"
+@page "/fungrounds/demolitionderby"
 <PageTitle>P32 Fungrounds</PageTitle>
 
-<div id="rw-hide-and-seek" class="rw-fungrounds">
+<div id="rw-demolition-derby" class="rw-fungrounds">
 
-    <PageHeader Text="Hide and Seek" ImageSource="images/fungrounds/p32-hide-and-seek.svg" />
+    <PageHeader Text="Demolition Derby" ImageSource="images/fungrounds/p32-demolition-derby.svg" />
 
     <TabControl>
-        <TabPage TabLabel="What is Hide and Seek?">
-
+        <TabPage TabLabel="What is Demolition Derby?">
             <p>
-                Blurb.
+                Demolition Derby is a mode all about smashing cars together whilst flinging non-C4 throwables everywhere.
             </p>
+
             <div class="learnings">
                 <p><b>"Secret Training"</b></p>
-                <p>Things.</p>
-                <p>Stuff.</p>
+                <p>Car Handling.</p>
+                <p>Using and Timing Throwables.</p>
             </div>
         </TabPage>
 
@@ -33,24 +33,27 @@
             <div class="winCondition">
 
                 <p><b>Win Conditions</b></p>
-                <p>You in if you do this</p>
-
+                <p>The winners are the owners of the last surviving car, or last team left standing.</p>
             </div>
         </TabPage>
 
         <TabPage TabLabel="Rules of Engagement">
 
             <ul>
-                <li><b>Do Not</b> be mean.</li>
+                <li>Bullet point.</li>
+                <li class="nested-list">
+                    <ul>
+                        <li>sub Bullet point.</li>
+                    </ul>
+                </li>
             </ul>
-
         </TabPage>
 
         <TabPage TabLabel="Match Settings">
 
-            <p><b>Note: Only edited settings are documented. If a setting is not mentioned in this section take it's value to be it's default value.</b></p>
+            <p><b>Note:</b> Only edited settings are documented. If a setting is not mentioned in this section take it's value to be it's default value.</p>
 
-            <h6>Basic:</h6>
+            <h6>Basic</h6>
 
             <div class="matchSettings">
                 <div class="settings-row">
@@ -86,7 +89,7 @@
             </div>
 
 
-            <h6>Rules:</h6>
+            <h6>Rules</h6>
 
             <div class="matchSettings">
                 <div class="settings-row">
@@ -123,7 +126,7 @@
                     <p>Use Recall</p>
                 </div>
                 <div class="settings-row">
-                    <p>On</p>
+                    <p>Off</p>
                 </div>
                 <div class="settings-row">
                     <p>Care Package Frequency</p>
@@ -139,7 +142,7 @@
                 </div>
             </div>
 
-            <h6>Spawns:</h6>
+            <h6>Spawns</h6>
 
             <div class="matchSettings">
                 <div class="settings-row">
@@ -167,7 +170,7 @@
                     <p>3</p>
                 </div>
                 <div class="settings-row">
-                    <p>All Other Backpacks</p>
+                    <p>[All Other Backpacks]</p>
                 </div>
                 <div class="settings-row">
                     <p>0</p>
@@ -185,7 +188,7 @@
                     <p>3</p>
                 </div>
                 <div class="settings-row">
-                    <p>All Other Helmet</p>
+                    <p>[All Other Helmets]</p>
                 </div>
                 <div class="settings-row">
                     <p>0</p>
@@ -203,18 +206,21 @@
                     <p>3</p>
                 </div>
                 <div class="settings-row">
-                    <p>All Other Armoured Vests</p>
+                    <p>[All Other Armoured Vests]</p>
                 </div>
                 <div class="settings-row">
                     <p>0</p>
                 </div>
             </div>
 
-            <h6>Blue Zone:</h6>
-            <p>Blue Zone setup using https://lunchmeat.zone/</p>
-            <img id="erangel-bluezones-image" src="images/fungrounds/erangel-bluezones-settings.png" alt="" loading="lazy" />
+            <h6>Blue Zone</h6>
+            <p>
+                Blue Zone initial setup calculated using <a href="https://lunchmeat.zone/" target="_self" class="link"> https://lunchmeat.zone/ </a>
+            </p>
 
+            <img id="erangel-bluezones-image" src="images/fungrounds/erangel-bluezones-settings.jpg" alt="" loading="lazy" />
         </TabPage>
 
-    </TabControl>    
+    </TabControl>   
+
 </div>

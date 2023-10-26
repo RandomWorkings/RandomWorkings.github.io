@@ -1,0 +1,18 @@
+﻿<div id="section-tabs" class="mb-3" role="group">
+  
+@foreach (TabPage tabPage in Pages)
+  {
+        <button type="button"
+                class="btn tab"
+                @onclick=@( () => ActivatePage(tabPage) )>
+                @tabPage.TabLabel
+        </button>
+  }
+
+</div>
+
+<hr />
+
+<CascadingValue Value="this">
+    @ChildContent
+</CascadingValue>
