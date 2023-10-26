@@ -1,11 +1,16 @@
 ﻿using Microsoft.AspNetCore.Components;
 
+using RandomWorkings.github.io.Components.DTO;
+
 namespace RandomWorkings.github.io.Components.Shared;
 
 partial class TabControl
 {
     [Parameter]
     public RenderFragment? ChildContent { get; set; }
+
+    [Parameter]
+    public TabColours TabColours { get; set; } = new();
 
     public TabPage? ActivePage { get; set; }
 
@@ -17,6 +22,11 @@ partial class TabControl
         if ( Pages.Count == 1 )
             ActivePage = tabPage;
         StateHasChanged();
+    }
+
+    string GetTabColour( TabPage page )
+    {
+        return page == ActivePage ? TabColours.TabActive : TabColours.TabInactive;
     }
 
     public void ActivatePage( TabPage page )
