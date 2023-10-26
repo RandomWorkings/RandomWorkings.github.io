@@ -2,24 +2,36 @@
 {
 }
 
-    #rw-fungrounds ::deep .button
-    {
-        width: auto;
-    }
+::deep .tab:hover
+{
+    background-color: var(--rw-plays-blue);
+}
 
-    #rw-fungrounds ::deep .button:nth-child(2n+1)
+#rw-fungrounds ::deep .button
+{
+    width: auto;
+}
+
+#rw-fungrounds .bd-community-modes ::deep .button
+{
+    width: auto;
+    background-color: var(--rw-plays-blue-light);
+}
+
+#rw-fungrounds .bd-alternative-modes ::deep .button
+{
+    width: auto;
+    background-color: var(--rw-plays-red-light);
+}
+
+    #rw-fungrounds ::deep .tab:hover
     {
         background-color: var(--rw-plays-blue);
-    }
-
-    #rw-fungrounds ::deep .button:nth-child(2n)
-    {
-        background-color: var(--rw-plays-red);
     }
 
     #rw-fungrounds ::deep .tab-active
     {
-        background-color: var(--rw-plays-blue);
+        background-color: var(--rw-plays-blue-dark);
     }
 
     #rw-fungrounds ::deep .tab-inactive

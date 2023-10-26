@@ -2,9 +2,14 @@
 {
 }
 
-    #rw-parade ::deep .tab-active
+    #rw-parade ::deep .tab:hover
     {
         background-color: var(--rw-plays-blue);
+    }
+
+    #rw-parade ::deep .tab-active
+    {
+        background-color: var(--rw-plays-blue-dark);
     }
 
     #rw-parade ::deep .tab-inactive

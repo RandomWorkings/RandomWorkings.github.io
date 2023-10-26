@@ -1,9 +1,15 @@
 ﻿#rw-dog-fight
 {
 }
-    #rw-dog-fight ::deep .tab-active
+
+    #rw-dog-fight ::deep .tab:hover
     {
         background-color: var(--rw-plays-blue);
+    }
+
+    #rw-dog-fight ::deep .tab-active
+    {
+        background-color: var(--rw-plays-blue-dark);
     }
 
     #rw-dog-fight ::deep .tab-inactive

@@ -1,9 +1,15 @@
 ﻿#rw-treasure-hunt
 {
 }
-    #rw-treasure-hunt ::deep .tab-active
+
+    #rw-treasure-hunt ::deep .tab:hover
     {
         background-color: var(--rw-plays-blue);
+    }
+
+    #rw-treasure-hunt ::deep .tab-active
+    {
+        background-color: var(--rw-plays-blue-dark);
     }
 
     #rw-treasure-hunt ::deep .tab-inactive

@@ -1,10 +1,14 @@
 ﻿#rw-demolition-derby
 {
 }
+    #rw-demolition-derby ::deep .tab:hover
+    {
+        background-color: var(--rw-plays-blue);
+    }
 
     #rw-demolition-derby ::deep .tab-active
     {
-        background-color: var(--rw-plays-blue);
+        background-color: var(--rw-plays-blue-dark);
     }
 
     #rw-demolition-derby ::deep .tab-inactive

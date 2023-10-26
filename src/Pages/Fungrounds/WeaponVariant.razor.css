@@ -2,9 +2,14 @@
 {
 }
 
-    #rw-weapon-variant ::deep .tab-active
+    #rw-weapon-variant ::deep .tab:hover
     {
         background-color: var(--rw-plays-blue);
+    }
+
+    #rw-weapon-variant ::deep .tab-active
+    {
+        background-color: var(--rw-plays-blue-dark);
     }
 
     #rw-weapon-variant ::deep .tab-inactive

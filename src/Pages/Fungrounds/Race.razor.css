@@ -2,9 +2,14 @@
 {
 }
 
-    #rw-race ::deep .tab-active
+    #rw-race ::deep .tab:hover
     {
         background-color: var(--rw-plays-blue);
+    }
+
+    #rw-race ::deep .tab-active
+    {
+        background-color: var(--rw-plays-blue-dark);
     }
 
     #rw-race ::deep .tab-inactive

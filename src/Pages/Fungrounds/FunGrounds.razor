@@ -6,21 +6,17 @@
 
     <PageHeader Text="Welcome to the Fungrounds!"/>
 
-    <div class="winCondition">
-
-        <p><b>The Three Rules</b></p>
-        <p>Be Kind.</p>
-        <p>Have Fun.</p>
-        <p>Forgo Malicious Intent.</p>
-
-    </div>
-
-    <hr/>
-
     <TabControl>
 
         <TabPage TabLabel="What are the Fungrounds?">
+            <div class="winCondition">
 
+                <p><b>The Three Rules</b></p>
+                <p>Be Kind.</p>
+                <p>Have Fun.</p>
+                <p>Forgo Malicious Intent.</p>
+
+            </div>
             <div class="paragraph">
                 <p>
                     The Fungrounds are a series of game modes, mostly noncombative, whose purpose is to create PUBG games that change up the formula of a normal PUBG match by throwing out all the rules and replacing them with our own.
@@ -54,7 +50,7 @@
 
         <TabPage TabLabel="Community Created Modes">
 
-            <div id="button-deck">
+            <div id="button-deck" class="bd-community-modes">
 
                 <ImageButton Id="race"
                              Text="Race"
@@ -132,7 +128,7 @@
 
         <TabPage TabLabel="Alternative Modes">
 
-            <div id="button-deck">
+            <div id="button-deck" class="bd-alternative-modes">
 
                 <ImageButton Id="weapon-variant"
                              Text="Weapon Variant"
