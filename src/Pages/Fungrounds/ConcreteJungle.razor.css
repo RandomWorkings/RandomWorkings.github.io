@@ -1,0 +1,40 @@
+﻿#rw-treasure-hunt
+{
+}
+
+    #rw-treasure-hunt ::deep .tab:hover
+    {
+        background-color: var(--rw-plays-blue);
+    }
+
+    #rw-treasure-hunt ::deep .tab-active
+    {
+        background-color: var(--rw-plays-blue-dark);
+    }
+
+    #rw-treasure-hunt ::deep .tab-inactive
+    {
+        background-color: var(--rw-plays-red);
+    }
+
+@media (min-width: 768px)
+{
+    .two-image-spread
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .four-image-spread
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+}
+
+.two-image-spread img, .four-image-spread img
+{
+    max-height: 300px;
+}
