@@ -1,3 +1,18 @@
 ﻿#rw-hide-and-seek
 {
 }
+
+    #rw-hide-and-seek ::deep .tab:hover
+    {
+        background-color: var(--rw-plays-blue);
+    }
+
+    #rw-hide-and-seek ::deep .tab-active
+    {
+        background-color: var(--rw-plays-blue-dark);
+    }
+
+    #rw-hide-and-seek ::deep .tab-inactive
+    {
+        background-color: var(--rw-plays-red);
+    }

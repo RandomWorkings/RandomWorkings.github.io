@@ -19,6 +19,11 @@ partial class TabControl
         StateHasChanged();
     }
 
+    string GetTabColour( TabPage page )
+    {
+        return page == ActivePage ? "tab-active" : "tab-inactive";
+    }
+
     public void ActivatePage( TabPage page )
     {
         ActivePage = page;

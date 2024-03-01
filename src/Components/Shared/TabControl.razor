@@ -3,7 +3,7 @@
 @foreach (TabPage tabPage in Pages)
   {
         <button type="button"
-                class="btn tab"
+                class="btn tab @GetTabColour(tabPage)"
                 @onclick=@( () => ActivatePage(tabPage) )>
                 @tabPage.TabLabel
         </button>

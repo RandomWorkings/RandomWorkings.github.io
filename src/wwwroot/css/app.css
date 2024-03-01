@@ -4,8 +4,8 @@
 
 :root
 {
-    --true-black: #FFF;
-    --true-white: #000;
+    --true-black: #000;
+    --true-white: #FFF;
     --rw-notice-grey-light: #DFDFDF;
     --rw-notice-grey-dark: #B2B2B2;
     --rw-talks-orange-light: #F8D9C5;
@@ -46,6 +46,15 @@
     --rw-zombie-orange: #C6380D;
 }
 
+.rw-plays-blue
+{
+    background-color: var(--rw-plays-blue);
+}
+
+.rw-plays-red
+{
+    background-color: var(--rw-plays-red);
+}
 
 #app
 {
@@ -139,8 +148,6 @@ hr
     gap: 1rem;
 }
 
-
-
 @media (min-width: 768px)
 {
     #button-deck
@@ -171,7 +178,6 @@ hr
     font-weight: 700;
     outline: 2px solid var(--rw-rabbit-blue);
     color: #000;
-    background-color: var(--rw-talks-grey-tint-55);
     border-radius: 4px;
     height: 3rem;
     padding: 0.5rem;

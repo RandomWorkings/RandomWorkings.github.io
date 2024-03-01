@@ -1,3 +1,18 @@
 ﻿#rw-riddles
 {
 }
+
+    #rw-riddles ::deep .tab:hover
+    {
+        background-color: var(--rw-plays-blue);
+    }
+
+    #rw-riddles ::deep .tab-active
+    {
+        background-color: var(--rw-plays-blue-dark);
+    }
+
+    #rw-riddles ::deep .tab-inactive
+    {
+        background-color: var(--rw-plays-red);
+    }

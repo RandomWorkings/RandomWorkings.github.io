@@ -2,6 +2,21 @@
 {
 }
 
+    #rw-dog-fight ::deep .tab:hover
+    {
+        background-color: var(--rw-plays-blue);
+    }
+
+    #rw-dog-fight ::deep .tab-active
+    {
+        background-color: var(--rw-plays-blue-dark);
+    }
+
+    #rw-dog-fight ::deep .tab-inactive
+    {
+        background-color: var(--rw-plays-red);
+    }
+
 #dog-fight-landing-strips
 {
     max-height:300px;

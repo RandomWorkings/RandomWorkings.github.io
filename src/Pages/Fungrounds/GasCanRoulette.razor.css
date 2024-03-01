@@ -1,18 +1,18 @@
-﻿#rw-mode-variant
+﻿#rw-gas-can-roulette
 {
 }
 
-    #rw-mode-variant ::deep .tab:hover
+    #rw-gas-can-roulette::deep .tab:hover
     {
         background-color: var(--rw-plays-blue);
     }
 
-    #rw-mode-variant ::deep .tab-active
+    #rw-gas-can-roulette ::deep .tab-active
     {
         background-color: var(--rw-plays-blue-dark);
     }
 
-    #rw-mode-variant ::deep .tab-inactive
+    #rw-gas-can-roulette ::deep .tab-inactive
     {
         background-color: var(--rw-plays-red);
     }

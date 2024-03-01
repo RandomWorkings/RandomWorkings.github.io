@@ -1,3 +1,18 @@
 ﻿#rw-race
 {
 }
+
+    #rw-race ::deep .tab:hover
+    {
+        background-color: var(--rw-plays-blue);
+    }
+
+    #rw-race ::deep .tab-active
+    {
+        background-color: var(--rw-plays-blue-dark);
+    }
+
+    #rw-race ::deep .tab-inactive
+    {
+        background-color: var(--rw-plays-red);
+    }
