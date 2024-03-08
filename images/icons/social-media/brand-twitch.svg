@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"  stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-brand-youtube" xml:space="preserve">
+    <title data-testid="svgTitle" id="twitch-svgtitle">twitch</title>
+<path d="M4,5v11c0,0.6,0.4,1,1,1h2v4l4-4h5.6c0.3,0,0.5-0.1,0.7-0.3l2.4-2.4c0.2-0.2,0.3-0.4,0.3-0.7V5c0-0.6-0.4-1-1-1
+	H5C4.4,4,4,4.4,4,5L4,5z M16,8v4 M12,8v4"/>
+</svg>
